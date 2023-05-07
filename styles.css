@@ -12,6 +12,11 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ img {
+  max-width: 100%;
+  display:block;
+margin:auto;
+}
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 :root {
   --bs-blue: #2a9fd6;
