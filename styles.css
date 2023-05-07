@@ -17,14 +17,16 @@
   display:block;
 margin:auto;
 }
-.contedor{
-  position: relative;
-}
+
 .CuartoLavado {
   display: flex;
 }
 .botonesSotano{
   display: flex;
+}
+.sotano{
+  margin-left: 1178px;
+  margin-top: -1000px
 }
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 :root {

@@ -1,4 +1,5 @@
-const imagen = document.querySelector("#Inicial");
+const imagen = document.querySelector(".Inicial");
+const imagenSo = document.querySelector(".sotano");
 
 const cambiarDentroLavado = document.querySelector("#cambiarDentroLavado");
 const CuartoLavado = document.querySelector(".CuartoLavado");
