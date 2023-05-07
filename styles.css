@@ -17,6 +17,9 @@
   display:block;
 margin:auto;
 }
+.contedor{
+  position: relative;
+}
 .CuartoLavado {
   display: flex;
 }
