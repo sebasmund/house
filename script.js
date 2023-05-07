@@ -5,6 +5,24 @@ const CuartoLavado = document.querySelector(".CuartoLavado");
 const botonesAdicionalesLavado = document.querySelector(
   ".botonesAdicionalesLavado"
 );
+
+const sotano = document.querySelector(".sotano");
+const botonesSotano = document.querySelector(
+  ".botonesSotano"
+);
+const EncenderSotano = document.querySelector("#EncenderSotano");
+const ApagarSotano = document.querySelector("#ApagarSotano");
+
+EncenderSotano.addEventListener("click", () => {
+    const rutaImagen = EncenderSotano.getAttribute("src");
+    imagen.src = rutaImagen;
+  });
+  
+  ApagarSotano.addEventListener("click", () => {
+    const rutaImagen = ApagarSotano.getAttribute("src");
+    imagen.src = rutaImagen;
+  });
+
 const EncenderLavado = document.querySelector("#EncenderLavado");
 const ApagarLavado = document.querySelector("#ApagarLavado");
 const volver = document.querySelector("#volver");
