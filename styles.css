@@ -1,33 +1,91 @@
 @charset "UTF-8";
-/*!
- * Bootswatch v5.2.3 (https://bootswatch.com)
- * Theme: cyborg
- * Copyright 2012-2022 Thomas Park
- * Licensed under MIT
- * Based on Bootstrap
-*/
-/*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
- img {
-  max-width: 100%;
-  display:block;
-margin:auto;
+
+ .contenedor {
+  position: relative;
 }
 
-.CuartoLavado {
-  display: flex;
+.plano {
+  position: absolute;
+  z-index: 1;
 }
-.botonesSotano{
-  display: flex;
+
+.sotanol {
+  position: absolute;
+  z-index: 2;
+  margin-left: 725px;
+  margin-top: 113px;
 }
-.sotano{
-  margin-left: 1178px;
-  margin-top: -1000px
+
+.h1l {
+  position: absolute;
+  z-index: 2;
+  
 }
+
+.lavadol {
+  position: absolute;
+  z-index: 2;
+  margin-left: 335px;
+  margin-top: 447px;
+  
+}
+
+.oculto {
+  display: none;
+}
+
+/* Estilos para el botón que despliega el menú */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para el contenedor que contiene el menú desplegable */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  padding: 12px 0;
+  margin: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Estilos para los botones dentro del menú desplegable */
+.dropdown-content button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  text-align: left;
+  border: none;
+  background-color: #f1f1f1;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Estilos para el botón de cerrar */
+.dropdown-content .cerrar {
+  text-align: right;
+}
+
+/* Estilos para el botón de cerrar dentro del menú desplegable */
+.dropdown-content .cerrar button {
+  background-color: #f1f1f1;
+  color: #333;
+  cursor: pointer;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 :root {
   --bs-blue: #2a9fd6;

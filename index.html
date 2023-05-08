@@ -1,255 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Proyect Fundacion</title>
 
-    <link rel="stylesheet" href="styles.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>house</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    
+</head>
 
-    <script src="/script.js" defer></script>
-  </head>
+<body>
 
-  <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="dropdown">
-                     
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="cambiarDentroLavado" data-image="https://cdn.glitch.global/d7cb4701-bcc3-4801-b808-afe62d7fd7cd/DentroApagado.png?v=1683391700568" data-toggle="dropdown">
-                        Habitacion Lavado
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                         <a class="dropdown-item disabled" href="#">Habitacion Lavado</a> <a class="dropdown-item" href="#EncenderLavado" data-image="https://cdn.glitch.global/d7cb4701-bcc3-4801-b808-afe62d7fd7cd/DentroPrendiod.png?v=1682820290487">Encender Luz</a> <a class="dropdown-item" href="#ApagarLavado"
-                         >Apagar Luz</a>
-                    </div>
-                </div>
-                <p></p>
-                <div class="dropdown">
-                     
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                        Habitacion Principal
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                         <a class="dropdown-item disabled" href="#">Habitacion Principal</a> <a class="dropdown-item" href="#">Encender Luz</a> <a class="dropdown-item" href="#">Apagar Luz</a>
-                    </div>
-                </div>
-                <p></p>
-                <div class="dropdown">
-                     
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                        Habitacion Secundaria
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                         <a class="dropdown-item disabled" href="#">Habitacion Secundaria</a> <a class="dropdown-item" href="#">Encender Luz</a> <a class="dropdown-item" href="#">Apagar Luz</a>
-                    </div>
-                </div>
-                <p></p>
-                <div class="dropdown">
-                     
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                        Habitacion Niño
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                         <a class="dropdown-item disabled" href="#">Habitacion Niño</a> <a class="dropdown-item" href="#">Encender Luz</a> <a class="dropdown-item" href="#">Apagar Luz</a>
-                    </div>
-                </div>
-                <p></p>
-                <div class="dropdown">
-                     
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                        Baño Principal
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                         <a class="dropdown-item disabled" href="#">Baño Principal</a> <a class="dropdown-item" href="#">Encender Luz</a> <a class="dropdown-item" href="#">Apagar Luz</a>
-                    </div>
-                </div>
-                <p></p>
-                <div class="dropdown">
-                     
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                        Baño Compartido
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                         <a class="dropdown-item disabled" href="#">Baño Compartido</a> <a class="dropdown-item" href="#">Encender Luz</a> <a class="dropdown-item" href="#">Apagar Luz</a>
-                    </div>
-                </div>
-                <p></p>
-                <div class="dropdown">
-                     
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                        Garage
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                         <a class="dropdown-item disabled" href="#">Garage</a> <a class="dropdown-item" href="#">Encender Luz</a> <a class="dropdown-item" href="#">Apagar Luz</a>
-                    </div>
-                </div>
-                <p></p>
-                <div class="dropdown">
-                     
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="cambSotano" data-toggle="dropdown">
-                        Sotano
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                         <a class="dropdown-item disabled" href="#">Sotano</a> <a class="dropdown-item" id="EncenderSotano" src ="assets/prueba.png">Encender Luz</a> <a class="dropdown-item" id="ApagarSotano" src="assets/planofull.png">Apagar Luz</a>
-                    </div>
-                </div>
-                <p></p>
-                <div class="dropdown">
-                     
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                        Cocina
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                         <a class="dropdown-item disabled" href="#">Cocina</a> <a class="dropdown-item" href="#">Encender Luz</a> <a class="dropdown-item" href="#">Apagar Luz</a>
-                    </div>
-                </div>
-                <p></p>
-                <div class="dropdown">
-                     
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                        Sala
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                         <a class="dropdown-item disabled" href="#">Sala</a> <a class="dropdown-item" href="#">Encender Luz</a> <a class="dropdown-item" href="#">Apagar Luz</a>
-                    </div>
-                </div>
-                <p></p>
-                <div class="dropdown">
-                     
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                        Comedor
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                         <a class="dropdown-item disabled" href="#">Comedor</a> <a class="dropdown-item" href="#">Encender Luz</a> <a class="dropdown-item" href="#">Apagar Luz</a>
-                    </div>
-                </div>
-                <p></p>
-                <div class="dropdown">
-                     
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                        Pasillos
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                         <a class="dropdown-item disabled" href="#">Pacillos</a> <a class="dropdown-item" href="#">Encender Luz</a> <a class="dropdown-item" href="#">Apagar Luz</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="botonesAdicionalesLavado">
-      <button
-        id="EncenderLavado"
-        data-image="https://cdn.glitch.global/d7cb4701-bcc3-4801-b808-afe62d7fd7cd/DentroPrendiod.png?v=1682820290487"
-      >
-        Encender Luz
-      </button>
-      <button
-        id="ApagarLavado"
-        data-image="https://cdn.glitch.global/d7cb4701-bcc3-4801-b808-afe62d7fd7cd/DentroApagado.png?v=1683391700568"
-      >
-        Apagar Luz
-      </button>
-      <button id="volver">Salir del cuarto de lavado</button>
-    </div>
+  <div class="contenedor">
+    
 
-    <div class="botonesAdicionaHabitacion1">
-      <button
-        id="EncenderHabitacion1"
-        data-image="https://cdn.glitch.global/d7cb4701-bcc3-4801-b808-afe62d7fd7cd/DentroHabitacion1Prendido.png?v=1683391804356"
-      >
-        Encender Luz
-      </button>
-      <button
-        id="ApagarHabitacion1"
-        data-image="https://cdn.glitch.global/d7cb4701-bcc3-4801-b808-afe62d7fd7cd/DentroHabitacion1Apagado.png?v=1683391794681"
-      >
-        Apagar Luz
-      </button>
-      <button id="volver2">Salir de la habitacion 1</button>
-    </div>
+    <button onclick="luzSotano()">sotano</button>
+    <button onclick="luzLavado()">lavado</button>
+    <button onclick="luzH1()">habitación 1</button>
 
-    <div class="botonesAdicionaHabitacion2">
-      <button
-        id="EncenderHabitacion2"
-        data-image="https://cdn.glitch.global/d7cb4701-bcc3-4801-b808-afe62d7fd7cd/DentroHabitacion2Prendido.png?v=1683394467025"
-      >
-        Encender Luz
-      </button>
-      <button
-        id="ApagarHabitacion2"
-        data-image="https://cdn.glitch.global/d7cb4701-bcc3-4801-b808-afe62d7fd7cd/DentroHabitacion2Apagado.png?v=1683394219514"
-      >
-        Apagar Luz
-      </button>
-      <button id="volver3">Salir de la habitacion 2</button>
-    </div>
+    <!-- plano -->
+    <img src="assets/planofull.png" alt="Plano" class="plano">
 
-    <div class="botonesAdicionaHabitacion3">
-      <button
-        id="EncenderHabitacion3"
-        data-image="https://cdn.glitch.global/d7cb4701-bcc3-4801-b808-afe62d7fd7cd/DentroHabitacion3Prendido.png?v=1683395117861"
-      >
-        Encender Luz
-      </button>
-      <button
-        id="ApagarHabitacion3"
-        data-image="https://cdn.glitch.global/d7cb4701-bcc3-4801-b808-afe62d7fd7cd/DentroHabitacion3Apagado.png?v=1683395110258"
-      >
-        Apagar Luz
-      </button>
-      <button id="volver4">Salir de la habitacion 3</button>
-    </div>
+    <!-- habitaciones encendidas -->
+    <img src="assets/sotano/sotanoencendido.png" alt="Sonatol" class="sotanol oculto">
+    <img src="assets/lavado/lavadol.png" alt="Lavadol" class="lavadol oculto">
+    <img src="assets/h1/h1l.png" alt="h1l" class="h1l oculto">
 
-    <div class="botonesAdicionaBanoPrincipal">
-      <button
-        id="EncenderBañoPrincipal"
-        data-image="https://cdn.glitch.global/d7cb4701-bcc3-4801-b808-afe62d7fd7cd/DentroBan%CC%83oPrendido.png?v=1683396919094"
-      >
-        Encender Luz
-      </button>
-      <button
-        id="ApagarBañoPrincipal"
-        data-image="https://cdn.glitch.global/d7cb4701-bcc3-4801-b808-afe62d7fd7cd/DentroBan%CC%83oApagado.png?v=1683396855445"
-      >
-        Apagar Luz
-      </button>
-      <button id="volver5">Salir del baño principal</button>
-    </div>
-
-    <div class="botonesAdicionaBanoPrivado">
-      <button
-        id="EncenderBañoPrivado"
-        data-image="https://cdn.glitch.global/d7cb4701-bcc3-4801-b808-afe62d7fd7cd/DentroBan%CC%83oPrivadoPrendido.png?v=1683398070671"
-      >
-        Encender Luz
-      </button>
-      <button
-        id="ApagarBañoPrivado"
-        data-image="https://cdn.glitch.global/d7cb4701-bcc3-4801-b808-afe62d7fd7cd/DentroBan%CC%83oPrivadoApagado.png?v=1683398066232"
-      >
-        Apagar Luz
-      </button>
-      <button id="volver6">Salir del baño Privado</button>
-    </div>
-
-   <div>
-    <div>
-        <img class="Inicial"
-      src="assets/planofull.png"
-      alt="Imagen" />
-    </div>
    
-   </div>
-   
-   
-   </div> 
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+
+    <!-- puertas abiertas -->
+
+
+    <!-- ventanas abiertas -->
+
+
+    <!-- closets abiertas -->
+
+  </div>
+
+   <!-- botones -->
+   <div class="dropdown">
+    <button class="dropbtn" onclick="mostrarOpciones()">Mostrar opciones</button>
+    <div class="dropdown-content">
+      <button>Botón 1</button>
+      <button>Botón 2</button>
+      <button>Botón 3</button>
+      <button>Botón 4</button>
+      <div class="cerrar"><button onclick="cerrarOpciones()">Cerrar</button></div>
+    </div>
+  </div>
+</body>
+
 </html>
