@@ -25,37 +25,51 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-4">
-          <div class="dropdown">
-            <button class="dropbtn" onclick="mostrarOpciones()">Opciones Sontano</button>
-            <div class="dropdown-content">
-              <button class="btn btn-primary"onclick="luzSotano(), luzEscaleras()">Luz Sotano</button>
-              <button>Botón 2</button>
-              <button>Botón 3</button>
-              <button>Botón 4</button>
-              <div class="cerrar"><button onclick="cerrarOpciones()">Cerrar</button></div>
+        </div>
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="dropdown">
+                <button class="dropbtn" onclick="mostrarOpciones()">Sontano</button>
+                <div class="dropdown-content">
+                  <button class="btn btn-primary"onclick="luzSotano(), luzEscaleras ()">Encender</button>
+                  <button class="btn btn-primary" onclick="puertaSotano()"> Abrir Puerta</button>
+                  <button>Botón 3</button>
+                  <button>Botón 4</button>
+                  <div class="cerrar"><button onclick="cerrarOpciones()">Cerrar</button></div>
+                </div>
+              </div>
+             
+              <div class="dropdown">
+                <button class="dropbtn" onclick="mostrarOpciones()">Lavado</button>
+                <div class="dropdown-content">
+                  <button onclick="luzLavado()">Encender1</button>
+                  <button > Abrir Puerta</button>
+                  <button>Botón 3</button>
+                  <button>Botón 4</button>
+                  <div class="cerrar"><button onclick="cerrarOpciones()">Cerrar</button></div>
+                </div>
+              </div>
+              
+              <button class="btn btn-primary"onclick="luzH1()">habitación 1</button>
+              <button class="btn btn-primary"onclick="luzHp()">habitación 2</butto>
+            </div>
+            <div class="col-md-4">
+              <button class="btn btn-primary"onclick="luzHnl()">habitación Niño</button>
+              <button class="btn btn-primary"onclick="luzComedor()">Comedor</button>
+              <button class="btn btn-primary"onclick="luzBano1()">Baño 1</button>
+              <button class="btn btn-primary"onclick="luzBano2()">Baño 2</button>
+            </div>
+            <div class="col-md-4">
+              <button class="btn btn-primary"onclick="luzCocina()">Cocina</button>
+              <button class="btn btn-primary"onclick="luzGarage()">Garage</button>
+              <button class="btn btn-primary"onclick="luzPasillo1()">Pasillo 1</button>
+              <button class="btn btn-primary"onclick="luzPasillo2()">Pasillo 2</button>
+              <button class="btn btn-primary" onclick="luzSala()">Sala</button>
             </div>
           </div>
-         
-          <button class="btn btn-primary"onclick="luzLavado()">lavado</button>
-          <button class="btn btn-primary"onclick="luzH1()">habitación 1</button>
-          <button class="btn btn-primary"onclick="luzHp()">habitación 2</button>
-          <button class="btn btn-primary"onclick="luzHnl()">habitación Niño</button>
-          <p></p>
-          <button class="btn btn-primary"onclick="luzComedor()">Comedor</button>
-
-        </div>
-        <div class="col-md-4">
-          
-        </div>
-        <div class="col-md-4">
-          <button class="btn btn-primary"onclick="luzBano1()">Baño 1</button>
-          <button class="btn btn-primary"onclick="luzBano2()">Baño 2</button>
-          <button class="btn btn-primary"onclick="luzCocina()">Cocina</button>
-          <button class="btn btn-primary"onclick="luzGarage()">Garage</button>
-          <button class="btn btn-primary"onclick="luzPasillo1()">Pasillo 1</button>
-          <button class="btn btn-primary"onclick="luzPasillo2()">Pasillo 2</button>
-          <button class="btn btn-primary" onclick="luzSala()">Sala</button>
-          
         </div>
       </div>
     </div>
@@ -81,7 +95,8 @@
    
 
     <!-- puertas abiertas -->
-
+  
+    <img src="assets/sotano/psa.png" alt="psa" class=" psa oculto">
 
     <!-- ventanas abiertas -->
 

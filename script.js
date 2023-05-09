@@ -72,6 +72,11 @@ function luzSala() {
   salal.classList.toggle('oculto');
   
 }
+function puertaSotano(){
+  var psa= document.querySelector('.psa');
+  psa.classList.toggle('oculto');
+  
+}
 
 function mostrarOpciones() {
   var opciones = document.querySelector(".dropdown-content");

@@ -105,7 +105,44 @@
 .oculto {
   display: none;
 }
+.dropdown-content1{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  padding: 12px 0;
+  margin: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content1{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  padding: 12px 0;
+  margin: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropbtn1 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.psa{
+  position: absolute;
+  z-index: 2;
+  margin-top: 370px;
+  margin-left: 438px;
+}
 
+p{
+  margin-bottom: 500px;
+}
 /* Estilos para el botón que despliega el menú */
 .dropbtn {
   background-color: #4CAF50;
