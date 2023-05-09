@@ -13,23 +13,89 @@
   position: absolute;
   z-index: 2;
   margin-left: 725px;
-  margin-top: 113px;
+  margin-top: 83px;
+
 }
 
 .h1l {
   position: absolute;
   z-index: 2;
+  margin-top: 790px;
+  margin-left: 13px;
+}
+.hpl{
+  position: absolute;
+  z-index: 2;
+  margin-top: 225px;
+  margin-right: 22px;
+  width: 220px;
+  height: 223px;
+
+}
+.hnl{
+  position: absolute;
+  z-index: 2;
+  margin-top: 373px;
+  margin-left: 5px;
   
 }
-
 .lavadol {
   position: absolute;
   z-index: 2;
   margin-left: 335px;
   margin-top: 447px;
   
+  
+}
+.comedorl{
+  position: absolute;
+  z-index: 2;
+  margin-left: 495px;
+ margin-top: 162px;
 }
 
+.baño1l{
+  position: absolute;
+  z-index: 2;
+  margin-top: 661px;
+  margin-left: 13px;
+}
+.b2l{
+  position: absolute;
+  z-index: 2;
+  margin-top: 83px;
+  margin-left: 5px;
+}
+.cocinal{
+  position: absolute;
+  z-index: 2;
+  margin-top: 383px;
+  margin-left: 495px;
+}
+.garagel{
+  position: absolute;
+  z-index: 2;
+  margin-top: 600px;
+  margin-left: 310px;
+}
+.pasillocl{
+  position: absolute;
+  z-index: 2;
+  margin-top: 523px;
+  margin-left: 147px;
+}
+.pasillopl{
+  position: absolute;
+  z-index: 2;
+  margin-top: 523px;
+  margin-left: 223px;
+}
+.salal{
+  position: absolute;
+  z-index: 2;
+  margin-top: 164px;
+  margin-left: 223px;
+}
 .oculto {
   display: none;
 }
