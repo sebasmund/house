@@ -96,6 +96,12 @@
   margin-top: 164px;
   margin-left: 223px;
 }
+.escalerasl{
+  position: absolute;
+  z-index: 2;
+  margin-top: 164px;
+  margin-left: 426px;
+}
 .oculto {
   display: none;
 }

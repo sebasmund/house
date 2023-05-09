@@ -4,6 +4,13 @@ function luzSotano() {
   sotanol.classList.toggle('oculto');
 }
 
+
+function luzEscaleras() {
+  var escalerasl = document.querySelector('.escalerasl');
+  escalerasl.classList.toggle('oculto');
+}
+
+
 function luzLavado() {
   var lavadol = document.querySelector('.lavadol');
   lavadol.classList.toggle('oculto');

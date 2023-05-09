@@ -25,7 +25,17 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-4">
-          <button class="btn btn-primary"onclick="luzSotano()">sotano</button>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="mostrarOpciones()">Opciones Sontano</button>
+            <div class="dropdown-content">
+              <button class="btn btn-primary"onclick="luzSotano(), luzEscaleras()">Luz Sotano</button>
+              <button>Botón 2</button>
+              <button>Botón 3</button>
+              <button>Botón 4</button>
+              <div class="cerrar"><button onclick="cerrarOpciones()">Cerrar</button></div>
+            </div>
+          </div>
+         
           <button class="btn btn-primary"onclick="luzLavado()">lavado</button>
           <button class="btn btn-primary"onclick="luzH1()">habitación 1</button>
           <button class="btn btn-primary"onclick="luzHp()">habitación 2</button>
@@ -55,6 +65,7 @@
 
     <!-- habitaciones encendidas -->
     <img src="assets/sotano/sotanoencendido.png" alt="Sonatol" class="sotanol oculto">
+    <img src="assets/sotano/escalerasl.png" alt="escalerasl" class="escalerasl oculto">
     <img src="assets/lavado/lavadol.png" alt="Lavadol" class="lavadol oculto">
     <img src="assets/h1/h1l.png" alt="h1l" class="h1l oculto">
     <img src="assets/hp/hpl.png" alt="hpl" class="hpl oculto">
