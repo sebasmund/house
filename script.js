@@ -79,7 +79,7 @@ function puertaSotano(){
 }
 
 function mostrarOpciones() {
-  var opciones = document.querySelector(".dropdown-content");
+  var opciones = document.querySelector(".dropdown-content1");
   if (opciones.style.display === "block") {
     opciones.style.display = "none";
   } else {
@@ -89,6 +89,6 @@ function mostrarOpciones() {
 
 /* Función para cerrar el menú desplegable */
 function cerrarOpciones() {
-  var opciones = document.querySelector(".dropdown-content");
+  var opciones = document.querySelector(".dropdown-content1");
   opciones.style.display = "none";
 }
