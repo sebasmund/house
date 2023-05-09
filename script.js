@@ -1,4 +1,3 @@
-
 function luzSotano() {
   var sotanol = document.querySelector('.sotanol');
   sotanol.classList.toggle('oculto');
@@ -92,9 +91,54 @@ function puertaHp(){
   phpa.classList.toggle('oculto');
   
 }
+function puertaNpa(){
+  var npa= document.querySelector('.npa');
+  npa.classList.toggle('oculto');
+  
+}
+function VentanaVa(){
+  var va= document.querySelector('.va');
+  va.classList.toggle('oculto');
+  
+}
+function PuertaBa(){
+  var pb1a= document.querySelector('.pb1a');
+  pb1a.classList.toggle('oculto');
+  
+}
+function PuertaBa2(){
+  var pb2a= document.querySelector('.pb2a');
+  pb2a.classList.toggle('oculto');
+  
+}
+function mostrarOpciones6() {
+  var opciones6 = document.querySelector(".dropdown-content6");
+  if (opciones6.style.display === "block") {
+    opciones6.style.display = "none";
+  } else {
+    opciones6.style.display = "block";
+  }
+}
+function mostrarOpciones7() {
+  var opciones7 = document.querySelector(".dropdown-content7");
+  if (opciones7.style.display === "block") {
+    opciones7.style.display = "none";
+  } else {
+    opciones7.style.display = "block";
+  }
+}
+
+function mostrarOpciones5() {
+  var opciones5 = document.querySelector(".dropdown-content5");
+  if (opciones5.style.display === "block") {
+    opciones5.style.display = "none";
+  } else {
+    opciones5.style.display = "block";
+  }
+}
 
 function mostrarOpciones() {
-  var opciones = document.querySelector(".dropdown-content1");
+  var opciones = document.querySelector(".dropdown-content");
   if (opciones.style.display === "block") {
     opciones.style.display = "none";
   } else {
@@ -127,8 +171,16 @@ function mostrarOpciones3() {
   }
 }
 
+function mostrarOpciones4() {
+  var opciones4 = document.querySelector(".dropdown-content4");
+  if (opciones4.style.display === "block") {
+    opciones4.style.display = "none";
+  } else {
+    opciones4.style.display = "block";
+  }
+}
 /* Función para cerrar el menú desplegable */
 function cerrarOpciones() {
-  var opciones = document.querySelector(".dropdown-content1");
+  var opciones = document.querySelector(".dropdown-content");
   opciones.style.display = "none";
 }

@@ -105,11 +105,18 @@
 .oculto {
   display: none;
 }
-<<<<<<< Updated upstream
-.dropdown-content{
-=======
+
+.dropdown-content1{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  padding: 12px 0;
+  margin: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
 .dropdown-content4{
->>>>>>> Stashed changes
   display: none;
   position: absolute;
   z-index: 1;
@@ -129,16 +136,6 @@
   margin: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
-<<<<<<< Updated upstream
-
-.dropbtn1 {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-=======
 .dropdown-content2{
   display: none;
   position: absolute;
@@ -158,7 +155,62 @@
   padding: 12px 0;
   margin: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
->>>>>>> Stashed changes
+}
+.dropdown-content5{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  padding: 12px 0;
+  margin: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content6{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  padding: 12px 0;
+  margin: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content7{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  padding: 12px 0;
+  margin: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.pb1a{
+  position: absolute;
+  z-index: 2;
+  margin-top: 740px;
+  margin-left: 141px;
+}
+.pb2a{
+  position: absolute;
+  z-index: 2;
+  margin-top: 228px;
+  margin-left: 91px;
+}
+
+.va{
+  position: absolute;
+  z-index: 2;
+  margin-top: 162px;
+  margin-left: 524px;
+}
+
+.npa{
+  position: absolute;
+  z-index: 2;
+  margin-top: 533px;
+  margin-left: 142px;
 }
 
 .psa{
