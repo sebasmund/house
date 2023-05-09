@@ -81,6 +81,31 @@ function puertaLavado(){
   pcla.classList.toggle('oculto');
   
 }
+function VetanaBa(){
+  var vb1a= document.querySelector('.vb1a');
+  vb1a.classList.toggle('oculto');
+  
+}
+function AbrirClo1(){
+  var cp2l= document.querySelector('.cp2l');
+  cp2l.classList.toggle('oculto');
+  
+}
+function AbrirClo2(){
+  var cp1l= document.querySelector('.cp1l');
+  cp1l.classList.toggle('oculto');
+  
+}
+function AbrirCloH1(){
+  var c1a= document.querySelector('.c1a');
+  c1a.classList.toggle('oculto');
+  
+}
+function VentanaBa2(){
+  var vb2a= document.querySelector('.vb2a');
+  vb2a.classList.toggle('oculto');
+  
+}
 function puertaH1(){
   var h1pa= document.querySelector('.h1pa');
   h1pa.classList.toggle('oculto');
@@ -89,6 +114,22 @@ function puertaH1(){
 function puertaHp(){
   var phpa= document.querySelector('.phpa');
   phpa.classList.toggle('oculto');
+  
+}
+function VentanaNpa(){
+  var npa= document.querySelector('.nva');
+  npa.classList.toggle('oculto');
+  
+}
+function AbrirVentanaHp(){
+  var vhpa= document.querySelector('.vhpa');
+  vhpa.classList.toggle('oculto');
+  
+}
+
+function AbrirVentanaH1(){
+  var h1va= document.querySelector('.h1va');
+h1va.classList.toggle('oculto');
   
 }
 function puertaNpa(){
@@ -106,10 +147,68 @@ function PuertaBa(){
   pb1a.classList.toggle('oculto');
   
 }
+function VentanaVca(){
+  var vca= document.querySelector('.vca');
+  vca.classList.toggle('oculto');
+  
+}
+function PuertaPga(){
+  var pga= document.querySelector('.pga');
+  pga.classList.toggle('oculto');
+  
+}
+function PuertaPcga(){
+  var pcga= document.querySelector('.pcga');
+  pcga.classList.toggle('oculto');
+  
+}
+
 function PuertaBa2(){
   var pb2a= document.querySelector('.pb2a');
   pb2a.classList.toggle('oculto');
   
+}
+function VentanaSala(){
+  var vsa= document.querySelector('.vsa');
+  vsa.classList.toggle('oculto');
+  
+}
+function PuertaPasillo2(){
+  var ppa= document.querySelector('.ppa');
+  ppa.classList.toggle('oculto');
+  
+}
+function mostrarOpciones12() {
+  var opciones12 = document.querySelector(".dropdown-content12");
+  if (opciones12.style.display === "block") {
+    opciones12.style.display = "none";
+  } else {
+    opciones12.style.display = "block";
+  }
+}
+function mostrarOpciones11() {
+  var opciones11 = document.querySelector(".dropdown-content11");
+  if (opciones11.style.display === "block") {
+    opciones11.style.display = "none";
+  } else {
+    opciones11.style.display = "block";
+  }
+}
+function mostrarOpciones9() {
+  var opciones9 = document.querySelector(".dropdown-content9");
+  if (opciones9.style.display === "block") {
+    opciones9.style.display = "none";
+  } else {
+    opciones9.style.display = "block";
+  }
+}
+function mostrarOpciones10() {
+  var opciones10 = document.querySelector(".dropdown-content10");
+  if (opciones10.style.display === "block") {
+    opciones10.style.display = "none";
+  } else {
+    opciones10.style.display = "block";
+  }
 }
 function mostrarOpciones6() {
   var opciones6 = document.querySelector(".dropdown-content6");
@@ -125,6 +224,14 @@ function mostrarOpciones7() {
     opciones7.style.display = "none";
   } else {
     opciones7.style.display = "block";
+  }
+}
+function mostrarOpciones8() {
+  var opciones8 = document.querySelector(".dropdown-content8");
+  if (opciones8.style.display === "block") {
+    opciones8.style.display = "none";
+  } else {
+    opciones8.style.display = "block";
   }
 }
 
