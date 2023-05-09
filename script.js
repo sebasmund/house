@@ -77,6 +77,21 @@ function puertaSotano(){
   psa.classList.toggle('oculto');
   
 }
+function puertaLavado(){
+  var pcla= document.querySelector('.pcla');
+  pcla.classList.toggle('oculto');
+  
+}
+function puertaH1(){
+  var h1pa= document.querySelector('.h1pa');
+  h1pa.classList.toggle('oculto');
+  
+}
+function puertaHp(){
+  var phpa= document.querySelector('.phpa');
+  phpa.classList.toggle('oculto');
+  
+}
 
 function mostrarOpciones() {
   var opciones = document.querySelector(".dropdown-content1");
@@ -84,6 +99,31 @@ function mostrarOpciones() {
     opciones.style.display = "none";
   } else {
     opciones.style.display = "block";
+  }
+}
+
+function mostrarOpciones1() {
+  var opciones1 = document.querySelector(".dropdown-content1");
+  if (opciones1.style.display === "block") {
+    opciones1.style.display = "none";
+  } else {
+    opciones1.style.display = "block";
+  }
+}
+function mostrarOpciones2() {
+  var opciones2 = document.querySelector(".dropdown-content2");
+  if (opciones2.style.display === "block") {
+    opciones2.style.display = "none";
+  } else {
+    opciones2.style.display = "block";
+  }
+}
+function mostrarOpciones3() {
+  var opciones3 = document.querySelector(".dropdown-content3");
+  if (opciones3.style.display === "block") {
+    opciones3.style.display = "none";
+  } else {
+    opciones3.style.display = "block";
   }
 }
 
