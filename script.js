@@ -1,3 +1,255 @@
+function aplHP() {
+  var btnluzhp = document.getElementById("btnluzhp");
+  var puertac = document.getElementById("puertacerrada");
+  var puertaa = document.getElementById("puertaabierta");
+  if (btnluzhp.innerHTML === "Apagar luces") {
+    btnluzhp.innerHTML = "Encender luces";
+    puertac.innerHTML = "Luces apagadas";
+    puertac.style.display = "block";
+    setTimeout(() => {
+      puertac.style.display = 'none';
+    }, 2500);
+    speakMessage("Luces apagadas")
+  } else {
+    btnluzhp.innerHTML = "Apagar luces";
+    puertaa.innerHTML = "Luces encedidas";
+    puertaa.style.display = "block";
+    setTimeout(() => {
+      puertaa.style.display = 'none';
+    }, 2500);
+    speakMessage("Luces encendidas")
+  }
+}
+
+function luzHP() {
+  luzHp();
+  aplHP();
+}
+
+function acpHP() {
+  var btnpuertahs = document.getElementById("btnpuertahs");
+  var puertac = document.getElementById("puertacerrada");
+  var puertaa = document.getElementById("puertaabierta");
+  if (btnpuertahs.innerHTML === "Cerrar puerta") {
+    btnpuertahs.innerHTML = "Abrir puerta";
+    puertac.innerHTML = "Puerta cerrada";
+    puertac.style.display = "block";
+    setTimeout(() => {
+      puertac.style.display = 'none';
+    }, 4500);
+    speakMessage("Puerta cerrada")
+  } else {
+    btnpuertahs.innerHTML = "Cerrar puerta";
+    puertaa.innerHTML = "Puerta abierta";
+    puertaa.style.display = "block";
+    setTimeout(() => {
+      puertaa.style.display = 'none';
+    }, 4500);
+    speakMessage("Puerta abierta")   
+  }
+}
+
+function puertaHP() {
+  puertaHp();
+  acpHP();
+}
+
+function acvHP() {
+  var btnventanahp = document.getElementById("btnventanahp");
+  var ventanac = document.getElementById("ventanacerrada");
+  var ventanaa = document.getElementById("ventanaabierta");
+  if (btnventanahp.innerHTML === "Cerrar ventana") {
+    btnventanahp.innerHTML = "Abrir ventana";
+    ventanac.innerHTML = "Ventana cerrada";
+    ventanac.style.display = "block";
+    setTimeout(() => {
+      ventanac.style.display = 'none';
+    }, 2500);
+    speakMessage("Ventana cerrada")
+  } else {
+    btnventanahp.innerHTML = "Cerrar ventana";
+    ventanaa.innerHTML = "Ventana abierta";
+    ventanaa.style.display = "block";
+    setTimeout(() => {
+      ventanaa.style.display = 'none';
+    }, 2500);
+    speakMessage("Ventana abierta")
+  }
+}
+
+function ventanaHP() {
+  AbrirVentanaHp();
+  acvHP();
+}
+
+function aplHS() {
+  var btnluzhs = document.getElementById("btnluzhs");
+  var puertac = document.getElementById("puertacerrada");
+  var puertaa = document.getElementById("puertaabierta");
+  if (btnluzhs.innerHTML === "Apagar luces") {
+    btnluzbp.innerHTML = "Encender luces";
+    puertac.innerHTML = "Luces apagadas";
+    puertac.style.display = "block";
+    setTimeout(() => {
+      puertac.style.display = 'none';
+    }, 2500);
+    speakMessage("Luces apagadas")
+  } else {
+    btnluzhs.innerHTML = "Apagar luces";
+    puertaa.innerHTML = "Luces encedidas";
+    puertaa.style.display = "block";
+    setTimeout(() => {
+      puertaa.style.display = 'none';
+    }, 2500);
+    speakMessage("Luces encendidas")
+  }
+}
+
+function luzHS() {
+  luzH1();
+  aplHS();
+}
+
+function acpHS() {
+  var btnpuertahs = document.getElementById("btnpuertahs");
+  var puertac = document.getElementById("puertacerrada");
+  var puertaa = document.getElementById("puertaabierta");
+  if (btnpuertahs.innerHTML === "Cerrar puerta") {
+    btnpuertahs.innerHTML = "Abrir puerta";
+    puertac.innerHTML = "Puerta cerrada";
+    puertac.style.display = "block";
+    setTimeout(() => {
+      puertac.style.display = 'none';
+    }, 4500);
+    speakMessage("Puerta cerrada")
+  } else {
+    btnpuertahs.innerHTML = "Cerrar puerta";
+    puertaa.innerHTML = "Puerta abierta";
+    puertaa.style.display = "block";
+    setTimeout(() => {
+      puertaa.style.display = 'none';
+    }, 4500);
+    speakMessage("Puerta abierta")   
+  }
+}
+
+function puertaHS() {
+  puertaH1();
+  acpHS();
+}
+
+function acvHS() {
+  var btnventanahs = document.getElementById("btnventanahs");
+  var ventanac = document.getElementById("ventanacerrada");
+  var ventanaa = document.getElementById("ventanaabierta");
+  if (btnventanahs.innerHTML === "Cerrar ventana") {
+    btnventanahs.innerHTML = "Abrir ventana";
+    ventanac.innerHTML = "Ventana cerrada";
+    ventanac.style.display = "block";
+    setTimeout(() => {
+      ventanac.style.display = 'none';
+    }, 2500);
+    speakMessage("Ventana cerrada")
+  } else {
+    btnventanahs.innerHTML = "Cerrar ventana";
+    ventanaa.innerHTML = "Ventana abierta";
+    ventanaa.style.display = "block";
+    setTimeout(() => {
+      ventanaa.style.display = 'none';
+    }, 2500);
+    speakMessage("Ventana abierta")
+  }
+}
+
+function ventanaHS() {
+  AbrirVentanaH1();
+  acvHS();
+}
+
+function acvBP() {
+  var btnventanabp = document.getElementById("btnventanabp");
+  var ventanac = document.getElementById("ventanacerrada");
+  var ventanaa = document.getElementById("ventanaabierta");
+  if (btnventanabp.innerHTML === "Cerrar ventana") {
+    btnventanabp.innerHTML = "Abrir ventana";
+    ventanac.innerHTML = "Ventana cerrada";
+    ventanac.style.display = "block";
+    setTimeout(() => {
+      ventanac.style.display = 'none';
+    }, 2500);
+    speakMessage("Ventana cerrada")
+  } else {
+    btnventanabp.innerHTML = "Cerrar ventana";
+    ventanaa.innerHTML = "Ventana abierta";
+    ventanaa.style.display = "block";
+    setTimeout(() => {
+      ventanaa.style.display = 'none';
+    }, 2500);
+    speakMessage("Ventana abierta")
+  }
+}
+
+function ventanaBP() {
+  VentanaBa();
+  acvBP();
+}
+
+function acpBP() {
+  var btnpuertabp = document.getElementById("btnpuertabp");
+  var puertac = document.getElementById("puertacerrada");
+  var puertaa = document.getElementById("puertaabierta");
+  if (btnpuertabp.innerHTML === "Cerrar puerta") {
+    btnpuertabp.innerHTML = "Abrir puerta";
+    puertac.innerHTML = "Puerta cerrada";
+    puertac.style.display = "block";
+    setTimeout(() => {
+      puertac.style.display = 'none';
+    }, 4500);
+    speakMessage("Puerta cerrada")
+  } else {
+    btnpuertabp.innerHTML = "Cerrar puerta";
+    puertaa.innerHTML = "Puerta abierta";
+    puertaa.style.display = "block";
+    setTimeout(() => {
+      puertaa.style.display = 'none';
+    }, 4500);
+    speakMessage("Puerta abierta")   
+  }
+}
+
+function puertaBP() {
+  PuertaBa();
+  acpBP();
+}
+
+function aplBP() {
+  var btnluzbp = document.getElementById("btnluzbp");
+  var puertac = document.getElementById("puertacerrada");
+  var puertaa = document.getElementById("puertaabierta");
+  if (btnluzbp.innerHTML === "Apagar luces") {
+    btnluzbp.innerHTML = "Encender luces";
+    puertac.innerHTML = "Luces apagadas";
+    puertac.style.display = "block";
+    setTimeout(() => {
+      puertac.style.display = 'none';
+    }, 2500);
+    speakMessage("Luces apagadas")
+  } else {
+    btnluzbp.innerHTML = "Apagar luces";
+    puertaa.innerHTML = "Luces encedidas";
+    puertaa.style.display = "block";
+    setTimeout(() => {
+      puertaa.style.display = 'none';
+    }, 2500);
+    speakMessage("Luces encendidas")
+  }
+}
+
+function luzBP() {
+  luzBano1();
+  aplBP();
+}
+
 function aplBH() {
   var btnluzbh = document.getElementById("btnluzbh");
   var puertac = document.getElementById("puertacerrada");
