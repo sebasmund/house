@@ -14,10 +14,18 @@
     crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- alertas -->
+    <div id="puertacerrada"></div>
+    <div id="puertaabierta"></div>
+    <div id="closetcerrado"></div>
+    <div id="closetabierto"></div>
+    <div id="ventanacerrada"></div>
+    <div id="ventanaabierta"></div>
+  
   <div class="contenedor">
     <!-- plano -->
     <img src="assets/planofull.png" alt="Plano" class="plano">
-
+   
     <!-- habitaciones encendidas -->
     <img src="assets/sotano/sotanoencendido.png" alt="Sonatol" class="sotanol oculto">
     <img src="assets/sotano/escalerasl.png" alt="escalerasl" class="escalerasl oculto">
@@ -71,14 +79,14 @@
       <button onclick="showDropdown('dropdown-menu-1')">Sótano</button>
       <div id="dropdown-menu-1" class="dropdown-menu">
         <button onclick="luzSotano(), luzEscaleras ()">Switch luz</button>
-        <button onclick="puertaSotano()">Abrir/Cerrar puerta</button>
+        <button onclick="puertaSotano()">Abrir puerta</button>
       </div>
     </div>
     <div class="dropdown">
       <button onclick="showDropdown('dropdown-menu-2')">Lavandero</button>
       <div id="dropdown-menu-2" class="dropdown-menu">
         <button onclick="luzLavado()">Switch luz</button>
-        <button onclick="puertaLavado()">Abrir/Cerrar puerta</button>
+        <button onclick="puertaLavado()">Abrir puerta</button>
       </div>
     </div>
     <div class="dropdown">
@@ -125,40 +133,40 @@
     <div class="dropdown">
       <button onclick="showDropdown('dropdown-menu-8')">Baño habitación</button>
       <div id="dropdown-menu-8" class="dropdown-menu">
-        <button class="btn btn-primary" onclick="luzBano2()">Switch luz</button>
-        <button class="btn btn-primary" onclick="PuertaBa2()">Abrir/Cerrar puerta</button>
-        <button class="btn btn-primary" onclick="VentanaBa2()">Abrir/Cerrar ventana</button>
+        <button id ="btnluzbh" class="btn btn-primary" onclick="luzBH()">Encender luces</button>
+        <button id ="btnpuertabh" class="btn btn-primary" onclick="puertaBH()">Abrir puerta</button>
+        <button id ="btnventanabh" class="btn btn-primary" onclick="ventanaBH()">Abrir ventana</button>
       </div>
     </div>
     <div class="dropdown">
       <button onclick="showDropdown('dropdown-menu-11')">Pasillos</button>
       <div id="dropdown-menu-11" class="dropdown-menu">
-        <button class="btn btn-primary" onclick="luzPasillo1()">Switch/Apagar luz pasillo habitaciones</button>
-        <button class="btn btn-primary" onclick="luzPasillo2()">Switch/Apagar luz pasillo principal</button>
-        <button class="btn btn-primary" onclick="luzPasillo3()">Switch/Apagar luz pasillo central</button>
+        <button id ="btnluzph" class="btn btn-primary" onclick="luzPH()">Encender luces pasillo habitaciones</button>
+        <button id ="btnluzpp" class="btn btn-primary" onclick="luzPP()">Encender luces pasillo principal</button>
+        <button id ="btnluzpc" class="btn btn-primary" onclick="luzPC()">Enceder luces pasillo central</button>
       </div>
     </div>
     <div class="dropdown">
       <button onclick="showDropdown('dropdown-menu-13')()">Sala</button>
       <div id="dropdown-menu-13" class="dropdown-menu">
-        <button class="btn btn-primary" onclick="luzSala()">Switch luz</button>
-        <button class="btn btn-primary" onclick="VentanaSala()">Abrir/Cerrar ventana</button>
+        <button id ="btnluzsa" class="btn btn-primary" onclick="luzSA()">Encender luces</button>
+        <button id ="btnventanasa" class="btn btn-primary" onclick="ventanaSA()">Abrir ventana</button>
       </div>
     </div>
     <div class="dropdown">
       <button onclick="showDropdown('dropdown-menu-9')">Cocina</button>
       <div id="dropdown-menu-9" class="dropdown-menu">
-        <button class="btn btn-primary" onclick="luzCocina()">Switch luz</button>
-        <button class="btn btn-primary" onclick="VentanaVca()">Abrir/Cerrar ventana</button>
+        <button id ="btnluzcoc" class="btn btn-primary" onclick="luzCOC()">Encender luces</button>
+        <button id ="btnventanacoc" class="btn btn-primary" onclick="ventanaCOC()">Abrir ventana</button>
       </div>
     </div>
     <div class="dropdown">
       <button onclick="showDropdown('dropdown-menu-12')()">Closets</button>
       <div id="dropdown-menu-12" class="dropdown-menu">
-        <button class="btn btn-primary" onclick="AbrirClo2()">Abrir/Cerrar closet pasillo principal</button>
-        <button class="btn btn-primary" onclick="AbrirClo1()">Abrir/Cerrar closet pasillo habitaciones</button>
-        <button class="btn btn-primary" onclick="AbrirCloH1()">Abrir/Cerrar closet habitación secundaria</button>
-        <button class="btn btn-primary" onclick="AbrirCloH2()">Abrir/Cerrar closet habitación principal</button>
+        <button id ="btnclosetpp" class="btn btn-primary" onclick="closetPP()">Abrir closet pasillo principal</button>
+        <button id ="btnclosetph" class="btn btn-primary" onclick="closetPH()">Abrir closet pasillo habitaciones</button>
+        <button id ="btncloseths" class="btn btn-primary" onclick="closetHS()">Abrir closet habitación secundaria</button>
+        <button id ="btnclosethp" class="btn btn-primary" onclick="closetHP()">Abrir closet habitación principal</button>
       </div>
     </div>
   </div>
@@ -166,9 +174,9 @@
     <div class="dropdown">
       <button onclick="showDropdown('dropdown-menu-10')">Garage</button>
       <div id="dropdown-menu-10" class="dropdown-menu">
-        <button class="btn btn-primary" onclick="luzGarage()">Switch luz</button>
-        <button class="btn btn-primary" onclick="PuertaPga()">Puerta carro</button>
-        <button class="btn btn-primary" onclick="PuertaPcga()">Abrir/Cerrar puerta</button>
+        <button id ="btnluzg" class="btn btn-primary" onclick="luzG()">Encender luces</button>
+        <button id ="btnpuertaga" class="btn btn-primary" onclick="puertaGA()">Abrir garage</button>
+        <button id ="btnpuertag" class="btn btn-primary" onclick="puertaG()">Abrir puerta</button>
       </div>
     </div>
   </div>
