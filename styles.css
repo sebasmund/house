@@ -232,33 +232,33 @@ button {
   position: absolute;
   z-index: 2;
   margin-top: 458px;
-  margin-left: 142px;
+  margin-left: 142.5px;
 }
 .psa {
   position: absolute;
   z-index: 2;
-  margin-top: 293px;
+  margin-top: 295px;
   margin-left: 438px;
 }
 
 .pcla {
   position: absolute;
   z-index: 2;
-  margin-top: 377px;
+  margin-top: 378px;
   margin-left: 437px;
 }
 
 .h1pa {
   position: absolute;
   z-index: 2;
-  margin-top: 728px;
+  margin-top: 729px;
   margin-left: 158px;
 }
 
 .h1va {
   position: absolute;
   z-index: 2;
-  margin-top: 876px;
+  margin-top: 875px;
   margin-left: 30px;
 }
 
@@ -272,7 +272,7 @@ button {
 .nva {
   position: absolute;
   z-index: 2;
-  margin-top: 333px;
+  margin-top: 333.8px;
   margin-left: 3px;
 
 }
