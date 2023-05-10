@@ -67,15 +67,15 @@ button {
 .h1l {
   position: absolute;
   z-index: 2;
-  margin-top: 805px;
+  margin-top: 730px;
   margin-left: 13px;
 }
 
 .hpl {
   position: absolute;
   z-index: 2;
-  margin-top: 225px;
-  margin-right: 22px;
+  margin-top: 154px;
+  margin-left: 5px;
   width: 220px;
   height: 223px;
 }
@@ -83,7 +83,7 @@ button {
 .hnl {
   position: absolute;
   z-index: 2;
-  margin-top: 373px;
+  margin-top: 295px;
   margin-left: 5px;
 }
 
@@ -91,70 +91,58 @@ button {
   position: absolute;
   z-index: 2;
   margin-left: 335px;
-  margin-top: 447px;
+  margin-top: 375px;
 }
 
 .comedorl {
   position: absolute;
   z-index: 2;
   margin-left: 495px;
-  margin-top: 162px;
+  margin-top: 88px;
 }
 
 .baño1l {
   position: absolute;
   z-index: 2;
-  margin-top: 661px;
-  margin-left: 13px;
+  margin-top: 582px;
+  margin-left: 11px;
 }
 
 .b2l {
   position: absolute;
   z-index: 2;
-  margin-top: 83px;
-  margin-left: 5px;
+  margin-top: 8px;
+  margin-left: 4px;
 }
 
 .cocinal {
   position: absolute;
   z-index: 2;
-  margin-top: 383px;
+  margin-top: 308px;
   margin-left: 495px;
-}
-
-.garagel {
-  position: absolute;
-  z-index: 2;
-  margin-top: 600px;
-  margin-left: 310px;
 }
 
 .pasillocl {
   position: absolute;
   z-index: 2;
-  margin-top: 523px;
-  margin-left: 147px;
+  margin-top: 447px;
+  margin-left: 145px;
 }
 
 .pasillopl {
   position: absolute;
   z-index: 2;
-  margin-top: 523px;
+  margin-top: 447px;
   margin-left: 223px;
 }
 
 .salal {
   position: absolute;
   z-index: 2;
-  margin-top: 164px;
-  margin-left: 223px;
+  margin-top: 87px;
+  margin-left: 216px;
 }
-.onl{
-  position: absolute;
-  z-index: 2;
-  margin-top: 164px;
-  margin-left: 223px;
-}
+
 .escalerasl {
   position: absolute;
   z-index: 2;
@@ -176,121 +164,115 @@ button {
 .vsa {
   position: absolute;
   z-index: 2;
-  margin-top: 162px;
+  margin-top: 86px;
   margin-left: 314px;
 }
 
 .pb1a {
   position: absolute;
   z-index: 2;
-  margin-top: 740px;
+  margin-top: 663px;
   margin-left: 141px;
 }
 
 .pb2a {
   position: absolute;
   z-index: 2;
-  margin-top: 228px;
+  margin-top: 152px;
   margin-left: 91px;
 }
 .c1a{
   position: absolute;
   z-index: 2;
-  margin-top: 228px;
-  margin-left: 91px;
+  margin-top: 803px;
+  margin-left: 150px;
 }
 .c2a{
   position: absolute;
   z-index: 2;
-  margin-top: 228px;
-  margin-left: 91px;
+  margin-top: 10px;
+  margin-left: 138px;
 }
 .cp1l{
   position: absolute;
   z-index: 2;
-  margin-top: 228px;
-  margin-left: 91px;
+  margin-top: 440px;
+  margin-left: 292px;
 }
-.cp2l{
-  position: absolute;
-  z-index: 2;
-  margin-top: 228px;
-  margin-left: 91px;
-}
+
 .vca {
   position: absolute;
   z-index: 2;
-  margin-top: 485px;
+  margin-top: 408px;
   margin-left: 695px;
 }
 
 .pga {
   position: absolute;
   z-index: 2;
-  margin-top: 592px;
-  margin-left: 428px;
+  margin-top: 516px;
+  margin-left: 427px;
 }
 
 .pcga {
   position: absolute;
   z-index: 2;
-  margin-top: 939px;
-  margin-left: 420px;
+  margin-top: 863px;
+  margin-left: 421px;
 }
 
 .va {
   position: absolute;
   z-index: 2;
-  margin-top: 162px;
+  margin-top: 85px;
   margin-left: 524px;
 }
 
-.npa {
+.npa{
   position: absolute;
   z-index: 2;
-  margin-top: 533px;
-  margin-left: 142px;
+  margin-top: 85px;
+  margin-left: 524px;
 }
-
 .psa {
   position: absolute;
   z-index: 2;
-  margin-top: 370px;
+  margin-top: 293px;
   margin-left: 438px;
 }
 
 .pcla {
   position: absolute;
   z-index: 2;
-  margin-top: 300px;
+  margin-top: 377px;
   margin-left: 437px;
 }
 
 .h1pa {
   position: absolute;
   z-index: 2;
-  margin-top: 805px;
+  margin-top: 728px;
   margin-left: 158px;
 }
 
 .h1va {
   position: absolute;
   z-index: 2;
-  margin-top: 952px;
+  margin-top: 876px;
   margin-left: 30px;
 }
 
 .vhpa {
   position: absolute;
   z-index: 2;
-  margin-top: 260px;
+  margin-top: 180px;
   margin-left: 11px;
 }
 
 .nva {
   position: absolute;
   z-index: 2;
-  margin-top: 410px;
+  margin-top: 333px;
   margin-left: 3px;
 
 }
@@ -298,55 +280,42 @@ button {
 .vb1a {
   position: absolute;
   z-index: 2;
-  margin-top: 730px;
+  margin-top: 653px;
   margin-left: 12px;
 }
 
 .vb2a {
   position: absolute;
   z-index: 2;
-  margin-top: 83px;
+  margin-top: 6px;
   margin-left: 86px;
 }
 .onl{
   position: absolute;
   z-index: 2;
-  margin-top: 595px;
-  margin-left: 105px;
+  margin-top: 310px;
+  margin-left: 150px;
 }
 .garagel{
   position: absolute;
   z-index: 2;
-  margin-top: 595px;
-  margin-left: 105px;
+  margin-top: 524px;
+  margin-left: 309px;
 }
 
 .cp2l {
   position: absolute;
   z-index: 2;
-  margin-top: 595px;
-  margin-left: 105px;
+  margin-top: 517px;
+  margin-left: 103px;
 
 }
 
-.cp1l {
-  position: absolute;
-  z-index: 2;
-  margin-top: 515px;
-  margin-left: 290px;
-}
-
-.c1a {
-  position: absolute;
-  z-index: 2;
-  margin-top: 880px;
-  margin-left: 147px;
-}
 
 .phpa {
   position: absolute;
   z-index: 2;
-  margin-top: 445px;
+  margin-top: 369px;
   margin-left: 158px;
 }
 

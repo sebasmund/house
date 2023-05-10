@@ -95,7 +95,7 @@ function puertaLavado(){
   
 }
 
-function VetanaBa(){
+function VentanaBa(){
   var vb1a= document.querySelector('.vb1a');
   vb1a.classList.toggle('oculto');
   
@@ -117,21 +117,12 @@ function AbrirClo1(){
   
 }
 
-function luzGarage(){
-  var garagel= document.querySelector('.garagel');
-  garagel.classList.toggle('oculto');
-  
-}
 function AbrirClo2(){
   var c1a= document.querySelector('.c1a');
   c1a.classList.toggle('oculto');
   
 }
-function luzPasillo3(){
-  var onl= document.querySelector('.onl');
-  onl.classList.toggle('oculto');
-  
-}
+
 function VentanaBa2(){
   var vb2a= document.querySelector('.vb2a');
   vb2a.classList.toggle('oculto');
