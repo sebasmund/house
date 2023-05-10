@@ -61,7 +61,7 @@ button {
   position: absolute;
   z-index: 2;
   margin-left: 725px;
-  margin-top: 83px;
+  margin-top: 7px;
 }
 
 .h1l {
@@ -149,11 +149,16 @@ button {
   margin-top: 164px;
   margin-left: 223px;
 }
-
-.escalerasl {
+.onl{
   position: absolute;
   z-index: 2;
   margin-top: 164px;
+  margin-left: 223px;
+}
+.escalerasl {
+  position: absolute;
+  z-index: 2;
+  margin-top: 90px;
   margin-left: 426px;
 }
 
