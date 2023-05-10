@@ -109,13 +109,6 @@
         <button class="btn btn-primary" onclick="puertaH1()">Abrir/Cerrar puerta</button>
         <button class="btn btn-primary" onclick="Abrir/CerrarVentanaH1()">Abrir/Cerrar ventana</button>
       </div>
-    </div>
-    <div class="dropdown">
-      <button onclick="showDropdown('dropdown-menu-13')()">Sala</button>
-      <div id="dropdown-menu-13" class="dropdown-menu">
-        <button class="btn btn-primary" onclick="luzSala()">Switch luz</button>
-        <button class="btn btn-primary" onclick="VentanaSala()">Abrir/Cerrar ventana</button>
-      </div>
     </div>  
   </div>
   <div class = "botones2">
@@ -144,11 +137,10 @@
       </div>
     </div>
     <div class="dropdown">
-      <button onclick="showDropdown('dropdown-menu-10')">Garage</button>
-      <div id="dropdown-menu-10" class="dropdown-menu">
-        <button class="btn btn-primary" onclick="luzGarage()">Switch luz</button>
-        <button class="btn btn-primary" onclick="PuertaPga()">Puerta carro</button>
-        <button class="btn btn-primary" onclick="PuertaPcga()">Abrir/Cerrar puerta</button>
+      <button onclick="showDropdown('dropdown-menu-13')()">Sala</button>
+      <div id="dropdown-menu-13" class="dropdown-menu">
+        <button class="btn btn-primary" onclick="luzSala()">Switch luz</button>
+        <button class="btn btn-primary" onclick="VentanaSala()">Abrir/Cerrar ventana</button>
       </div>
     </div>
     <div class="dropdown">
@@ -161,13 +153,22 @@
     <div class="dropdown">
       <button onclick="showDropdown('dropdown-menu-12')()">Closets</button>
       <div id="dropdown-menu-12" class="dropdown-menu">
-        <button class="btn btn-primary" onclick="Abrir/CerrarClo2()">Abrir/Cerrar closet pasillo principal</button>
-        <button class="btn btn-primary" onclick="Abrir/CerrarClo1()">Abrir/Cerrar closet pasillo habitaciones</button>
-        <button class="btn btn-primary" onclick="Abrir/CerrarCloH1()">Abrir/Cerrar closet habitación secundaria</button>
+        <button class="btn btn-primary" onclick="CerrarClo2()">Abrir/Cerrar closet pasillo principal</button>
+        <button class="btn btn-primary" onclick="CerrarClo1()">Abrir/Cerrar closet pasillo habitaciones</button>
+        <button class="btn btn-primary" onclick="CerrarCloH1()">Abrir/Cerrar closet habitación secundaria</button>
         <button class="btn btn-primary" onclick="Abrir/CerrarCloH1()">Abrir/Cerrar closet habitación principal</button>
       </div>
     </div>
-    
+  </div>
+  <div class="botones3">
+    <div class="dropdown">
+      <button onclick="showDropdown('dropdown-menu-10')">Garage</button>
+      <div id="dropdown-menu-10" class="dropdown-menu">
+        <button class="btn btn-primary" onclick="luzGarage()">Switch luz</button>
+        <button class="btn btn-primary" onclick="PuertaPga()">Puerta carro</button>
+        <button class="btn btn-primary" onclick="PuertaPcga()">Abrir/Cerrar puerta</button>
+      </div>
+    </div>
   </div>
 </body>
 </html>
