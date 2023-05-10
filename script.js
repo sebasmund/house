@@ -71,6 +71,12 @@ function luzPasillo2() {
   
 }
 
+function luzPasillo3(){
+ var onl= document.querySelector('.onl');
+ onl.classList.toggle('oculto');
+ 
+}
+
 function luzSala() {
   var salal= document.querySelector('.salal');
   salal.classList.toggle('oculto');
@@ -95,24 +101,43 @@ function VetanaBa(){
   
 }
 
+
+function AbrirClo1(){
+  var cp2l= document.querySelector('.cp2l');
+  cp2l.classList.toggle('oculto');
+  
+}
+function AbrirCloH1(){
+  var cp1l= document.querySelector('.cp1l');
+  cp1l.classList.toggle('oculto');
+  
+}
+function AbrirCloH2(){
+  var c2a= document.querySelector('.c2a');
+  c2a.classList.toggle('oculto');
+  
+}
 function AbrirClo1(){
   var cp2l= document.querySelector('.cp2l');
   cp2l.classList.toggle('oculto');
   
 }
 
+function luzGarage(){
+  var garagel= document.querySelector('.garagel');
+  garagel.classList.toggle('oculto');
+  
+}
 function AbrirClo2(){
   var cp1l= document.querySelector('.cp1l');
   cp1l.classList.toggle('oculto');
   
 }
-
-function AbrirClo1(){
-  var c1a= document.querySelector('.c1a');
-  c1a.classList.toggle('oculto');
+function luzPasillo3(){
+  var onl= document.querySelector('.onl');
+  onl.classList.toggle('oculto');
   
 }
-
 function VentanaBa2(){
   var vb2a= document.querySelector('.vb2a');
   vb2a.classList.toggle('oculto');

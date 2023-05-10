@@ -280,6 +280,18 @@ button {
   margin-top: 83px;
   margin-left: 86px;
 }
+.onl{
+  position: absolute;
+  z-index: 2;
+  margin-top: 595px;
+  margin-left: 105px;
+}
+.garagel{
+  position: absolute;
+  z-index: 2;
+  margin-top: 595px;
+  margin-left: 105px;
+}
 
 .cp2l {
   position: absolute;
