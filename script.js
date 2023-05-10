@@ -101,12 +101,6 @@ function VetanaBa(){
   
 }
 
-
-function AbrirClo1(){
-  var cp2l= document.querySelector('.cp2l');
-  cp2l.classList.toggle('oculto');
-  
-}
 function AbrirCloH1(){
   var cp1l= document.querySelector('.cp1l');
   cp1l.classList.toggle('oculto');
@@ -129,8 +123,8 @@ function luzGarage(){
   
 }
 function AbrirClo2(){
-  var cp1l= document.querySelector('.cp1l');
-  cp1l.classList.toggle('oculto');
+  var c1a= document.querySelector('.c1a');
+  c1a.classList.toggle('oculto');
   
 }
 function luzPasillo3(){

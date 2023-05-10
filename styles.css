@@ -188,7 +188,30 @@ button {
   margin-top: 228px;
   margin-left: 91px;
 }
-
+.c1a{
+  position: absolute;
+  z-index: 2;
+  margin-top: 228px;
+  margin-left: 91px;
+}
+.c2a{
+  position: absolute;
+  z-index: 2;
+  margin-top: 228px;
+  margin-left: 91px;
+}
+.cp1l{
+  position: absolute;
+  z-index: 2;
+  margin-top: 228px;
+  margin-left: 91px;
+}
+.cp2l{
+  position: absolute;
+  z-index: 2;
+  margin-top: 228px;
+  margin-left: 91px;
+}
 .vca {
   position: absolute;
   z-index: 2;
