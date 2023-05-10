@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,152 +9,12 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-    
 </head>
-
 <body>
-
   <div class="contenedor">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4">
-        </div>
-        <div class="col-md-4">
-        </div>
-        <div class="col-md-4">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="dropdown">
-                <button class="dropbtn" onclick="mostrarOpciones()">Sontano</button>
-                <div class="dropdown-content">
-                  <button class="btn btn-primary"onclick="luzSotano(), luzEscaleras ()">Encender</button>
-                  <button class="btn btn-primary" onclick="puertaSotano()"> Abrir Puerta</button>
-                  <div class="cerrar"><button onclick="cerrarOpciones()">Cerrar</button></div>
-                </div>
-              </div>
-             
-              <div class="dropdown">
-                <button class="dropbtn" onclick="mostrarOpciones1()">Lavado</button>
-                <div class="dropdown-content1">
-                  <button  class= " btn btn-primary"onclick="luzLavado()">Encender</button>
-                  <button  class="btn btn-primary" onclick="puertaLavado()"> Abrir Puerta</button>
-                  <div class="cerrar"><button onclick="cerrarOpciones1()">Cerrar</button></div>
-                </div>
-              </div>
-              
-              <div class="dropdown">
-                <button class="dropbtn" onclick="mostrarOpciones2()">Habitacion 1</button>
-                <div class="dropdown-content2">
-                  <button class="btn btn-primary"onclick="luzH1()">Encender Luz</button>
-                  <button  class="btn btn-primary" onclick="puertaH1()"> Abrir Puerta</button>
-                  <button class="btn btn-primary" onclick="AbrirVentanaH1()">Abrir Ventana</button>
-                  <button class="btn btn-primary" onclick="AbrirCloH1()">Abrir Closet</button>
-                  <div class="cerrar"><button onclick="cerrarOpciones1()">Cerrar</button></div>
-                </div>
-              </div>
-              <div class="dropdown">
-                <button class="dropbtn" onclick="mostrarOpciones3()">Habitacion 2</button>
-                <div class="dropdown-content3">
-                  <button class="btn btn-primary"onclick="luzHp()">Encender Luz </butto>
-                  <button  class="btn btn-primary" onclick="puertaHp()"> Abrir Puerta</button>
-                  <button class="btn btn-primary" onclick="AbrirVentanaHp()">Abrir Ventana</button>
-                  <div class="cerrar"><button onclick="cerrarOpciones1()">Cerrar</button></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="dropdown">
-                <button class="dropbtn" onclick="mostrarOpciones4()">Habitacion niño</button>
-                <div class="dropdown-content4">
-                  <button class="btn btn-primary"onclick="luzHnl()">Encender Luz </butto>
-                  <button  class="btn btn-primary" onclick="puertaNpa()"> Abrir Puerta</button>
-                  <button class="btn btn-primary" onclick="VentanaNpa()">Abrir Ventana</button>
-                  <div class="cerrar"><button onclick="cerrarOpciones1()">Cerrar</button></div>
-                </div>
-              </div>
-              <div class="dropdown">
-                <button class="dropbtn" onclick="mostrarOpciones5()">Comedor</button>
-                <div class="dropdown-content5">
-                  <button class="btn btn-primary"onclick="luzComedor()">Encender Luz</button>
-                  <button  class="btn btn-primary" onclick="VentanaVa()"> Abrir Ventana</button>
-                  <div class="cerrar"><button onclick="cerrarOpciones1()">Cerrar</button></div>
-                </div>
-              </div>
-              <div class="dropdown">
-                <button class="dropbtn" onclick="mostrarOpciones6()">Baño 1</button>
-                <div class="dropdown-content6">
-                  <button class="btn btn-primary"onclick="luzBano1()">Encender Luz </button>
-                  <button  class="btn btn-primary" onclick="PuertaBa()"> Abrir Puerta</button>
-                  <button class="btn btn-primary" onclick="VetanaBa()">Abrir Ventana</button>
-                  <div class="cerrar"><button onclick="cerrarOpciones1()">Cerrar</button></div>
-                </div>
-              </div>
-              <div class="dropdown">
-                <button class="dropbtn" onclick="mostrarOpciones7()">Baño 2</button>
-                <div class="dropdown-content7">
-                  <button class="btn btn-primary"onclick="luzBano2()">Encender Luz</button>
-                  <button  class="btn btn-primary" onclick="PuertaBa2()"> Abrir Puerta</button>
-                  <button class="btn btn-primary" onclick="VentanaBa2()">Abrir Ventana</button>
-                  <div class="cerrar"><button onclick="cerrarOpciones1()">Cerrar</button></div>
-                </div>
-              </div>
-             
-            </div>
-            <div class="col-md-4">
-              <div class="dropdown">
-                <button class="dropbtn" onclick="mostrarOpciones8()">Cocina</button>
-                <div class="dropdown-content8">
-                  <button class="btn btn-primary"onclick="luzCocina()">Encender Luz</button>
-                  <button  class="btn btn-primary" onclick="VentanaVca()"> Abrir Ventana</button>
-                  <div class="cerrar"><button onclick="cerrarOpciones1()">Cerrar</button></div>
-                </div>
-              </div>
-              <div class="dropdown">
-                <button class="dropbtn" onclick="mostrarOpciones9()">Garage</button>
-                <div class="dropdown-content9">
-                  <button class="btn btn-primary"onclick="luzGarage()">Encender Luz</button>
-                  <button  class="btn btn-primary" onclick="PuertaPga()"> Puerta Entrada</button>
-                  <button  class="btn btn-primary" onclick="PuertaPcga()"> Puerta Salida</button>
-                  <div class="cerrar"><button onclick="cerrarOpciones1()">Cerrar</button></div>
-                </div>
-              </div>
-              <div class="dropdown">
-                <button class="dropbtn" onclick="mostrarOpciones10()">Pasillo 1</button>
-                <div class="dropdown-content10">
-                  <button class="btn btn-primary"onclick="luzPasillo1()">Encender Luz</button>
-                  <button class="btn btn-primary" onclick="AbrirClo1()">Abrir Closet</button>
-                  <div class="cerrar"><button onclick="cerrarOpciones1()">Cerrar</button></div>
-                </div>
-              </div>
-              <div class="dropdown">
-                <button class="dropbtn" onclick="mostrarOpciones11()">Pasillo 2</button>
-                <div class="dropdown-content11">
-                  <button class="btn btn-primary"onclick="luzPasillo2()">Encender Luz</button>
-                  <button class="btn btn-primary" onclick="AbrirClo2()">Abrir Closet</button>
-                  <div class="cerrar"><button onclick="cerrarOpciones1()">Cerrar</button></div>
-                </div>
-              </div>
-              <div class="dropdown">
-                <button class="dropbtn" onclick="mostrarOpciones12()">Sala</button>
-                <div class="dropdown-content12">
-                  <button class="btn btn-primary" onclick="luzSala()">Encender Luz</button>
-                  <button class="btn btn-primary" onclick="VentanaSala()">Abrir Ventana</button>
-                  <div class="cerrar"><button onclick="cerrarOpciones1()">Cerrar</button></div>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- plano -->
     <img src="assets/planofull.png" alt="Plano" class="plano">
 
@@ -174,10 +33,8 @@
     <img src="assets/pasillos/pasillocl.png" alt="pasillocl" class="pasillocl oculto">
     <img src="assets/pasillos/pasillopl.png" alt="pasillopl" class="pasillopl oculto">
     <img src="assets/sala/salal.png" alt="salal" class="salal oculto">
-   
 
     <!-- puertas abiertas -->
-  
     <img src="assets/sotano/psa.png" alt="psa" class=" psa oculto">
     <img src="assets/lavado/pcla.png" alt="pcla" class="pcla oculto">
     <img src="assets/h1/h1pa.png" alt="h1pa" class=" h1pa oculto">
@@ -189,8 +46,6 @@
     <img src="assets/garage/pga.png" alt="pga" class="pga oculto">
     <img src="assets/garage/pcga.png" alt="pcga" class="pcga oculto">
     <img src="assets/pasillos/ppa.png" alt="ppa" class="ppa oculto">
-  
-    
 
     <!-- ventanas abiertas -->
     <img src="assets/comedor/va.png" alt="va" class="va oculto">
@@ -199,27 +54,120 @@
     <img src="assets/h1/h1va.png" alt="h1va" class="h1va oculto">
     <img src="assets/hp/vhpa.png" alt="vhpa" class="vhpa oculto">
     <img src="assets/niño/nva.png" alt="nva" class="nva oculto">
-    <img src="assets/baño1/vb1a.png" alt="vb1a"class="vb1a oculto">
+    <img src="assets/baño1/vb1a.png" alt="vb1a" class="vb1a oculto">
     <img src="assets/baño2/vb2a.png" alt="vb2a" class="vb2a oculto">
 
-    <!-- closets abiertas -->
+    <!-- closets abiertos -->
     <img src="assets/pasillos/cp2l.png" alt="cp2l" class="cp2l oculto">
     <img src="assets/pasillos/cp1l.png" alt="cp1l" class="cp1l oculto">
     <img src="assets/h1/c1a.png" alt="c1a" class="c1a oculto">
-
   </div>
 
-   <!-- botones -->
-   <div class="dropdown">
-    <button class="dropbtn" onclick="mostrarOpciones()">Mostrar opciones</button>
-    <div class="dropdown-content">
-      <button>Botón 1</button>
-      <button>Botón 2</button>
-      <button>Botón 3</button>
-      <button>Botón 4</button>
-      <div class="cerrar"><button onclick="cerrarOpciones()">Cerrar</button></div>
+  <!-- botones -->
+  <div class="botones">
+    <div class="dropdown">
+      <button onclick="showDropdown('dropdown-menu-1')">Sótano</button>
+      <div id="dropdown-menu-1" class="dropdown-menu">
+        <button onclick="luzSotano(), luzEscaleras ()">Switch luz</button>
+        <button onclick="puertaSotano()">Abrir/Cerrar puerta</button>
+      </div>
     </div>
+    <div class="dropdown">
+      <button onclick="showDropdown('dropdown-menu-2')">Lavandero</button>
+      <div id="dropdown-menu-2" class="dropdown-menu">
+        <button onclick="luzLavado()">Switch luz</button>
+        <button onclick="puertaLavado()">Abrir/Cerrar puerta</button>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button onclick="showDropdown('dropdown-menu-5')">Habitacion bebé</button>
+      <div id="dropdown-menu-5" class="dropdown-menu">
+        <button class="btn btn-primary" onclick="luzHnl()">Switch luz</butto>
+          <button class="btn btn-primary" onclick="puertaNpa()">Abrir/Cerrar puerta</button>
+          <button class="btn btn-primary" onclick="VentanaNpa()">Abrir/Cerrar ventana</button>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button onclick="showDropdown('dropdown-menu-6')">Comedor</button>
+      <div id="dropdown-menu-6" class="dropdown-menu">
+        <button class="btn btn-primary" onclick="luzComedor()">Switch luz</button>
+        <button class="btn btn-primary" onclick="VentanaVa()">Abrir/Cerrar ventana</button>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button onclick="showDropdown('dropdown-menu-4')">Habitacion principal</button>
+      <div id="dropdown-menu-4" class="dropdown-menu">
+        <button class="btn btn-primary" onclick="luzHp()">Switch Luz </butto>
+          <button class="btn btn-primary" onclick="puertaHp()">Abrir/Cerrar puerta</button>
+          <button class="btn btn-primary" onclick="Abrir/CerrarVentanaHp()">Abrir/Cerrar ventana</button>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button onclick="showDropdown('dropdown-menu-3')">Habitación secundaria</button>
+      <div id="dropdown-menu-3" class="dropdown-menu">
+        <button class="btn btn-primary" onclick="luzH1()">Switch luz</button>
+        <button class="btn btn-primary" onclick="puertaH1()">Abrir/Cerrar puerta</button>
+        <button class="btn btn-primary" onclick="Abrir/CerrarVentanaH1()">Abrir/Cerrar ventana</button>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button onclick="showDropdown('dropdown-menu-13')()">Sala</button>
+      <div id="dropdown-menu-13" class="dropdown-menu">
+        <button class="btn btn-primary" onclick="luzSala()">Switch luz</button>
+        <button class="btn btn-primary" onclick="VentanaSala()">Abrir/Cerrar ventana</button>
+      </div>
+    </div>  
+  </div>
+  <div class = "botones2">
+    <div class="dropdown">
+      <button onclick="showDropdown('dropdown-menu-7')">Baño pasillo</button>
+      <div id="dropdown-menu-7" class="dropdown-menu">
+        <button class="btn btn-primary" onclick="luzBano1()">Switch luz</button>
+        <button class="btn btn-primary" onclick="PuertaBa()">Abrir/Cerrar puerta</button>
+        <button class="btn btn-primary" onclick="VetanaBa()">Abrir/Cerrar ventana</button>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button onclick="showDropdown('dropdown-menu-8')">Baño habitación</button>
+      <div id="dropdown-menu-8" class="dropdown-menu">
+        <button class="btn btn-primary" onclick="luzBano2()">Switch luz</button>
+        <button class="btn btn-primary" onclick="PuertaBa2()">Abrir/Cerrar puerta</button>
+        <button class="btn btn-primary" onclick="VentanaBa2()">Abrir/Cerrar ventana</button>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button onclick="showDropdown('dropdown-menu-11')">Pasillos</button>
+      <div id="dropdown-menu-11" class="dropdown-menu">
+        <button class="btn btn-primary" onclick="luzPasillo1()">Switch/Apagar luz pasillo habitaciones</button>
+        <button class="btn btn-primary" onclick="luzPasillo2()">Switch/Apagar luz pasillo principal</button>
+        <button class="btn btn-primary" onclick="luzPasillo3()">Switch/Apagar luz pasillo central</button>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button onclick="showDropdown('dropdown-menu-10')">Garage</button>
+      <div id="dropdown-menu-10" class="dropdown-menu">
+        <button class="btn btn-primary" onclick="luzGarage()">Switch luz</button>
+        <button class="btn btn-primary" onclick="PuertaPga()">Puerta carro</button>
+        <button class="btn btn-primary" onclick="PuertaPcga()">Abrir/Cerrar puerta</button>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button onclick="showDropdown('dropdown-menu-9')">Cocina</button>
+      <div id="dropdown-menu-9" class="dropdown-menu">
+        <button class="btn btn-primary" onclick="luzCocina()">Switch luz</button>
+        <button class="btn btn-primary" onclick="VentanaVca()">Abrir/Cerrar ventana</button>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button onclick="showDropdown('dropdown-menu-12')()">Closets</button>
+      <div id="dropdown-menu-12" class="dropdown-menu">
+        <button class="btn btn-primary" onclick="Abrir/CerrarClo2()">Abrir/Cerrar closet pasillo principal</button>
+        <button class="btn btn-primary" onclick="Abrir/CerrarClo1()">Abrir/Cerrar closet pasillo habitaciones</button>
+        <button class="btn btn-primary" onclick="Abrir/CerrarCloH1()">Abrir/Cerrar closet habitación secundaria</button>
+        <button class="btn btn-primary" onclick="Abrir/CerrarCloH1()">Abrir/Cerrar closet habitación principal</button>
+      </div>
+    </div>
+    
   </div>
 </body>
-
 </html>
