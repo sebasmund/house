@@ -1,3 +1,59 @@
+// Primero, se debe comprobar si el navegador es compatible con la API de reconocimiento de voz
+if ('webkitSpeechRecognition' in window) {
+  // Se crea una instancia de la API de reconocimiento de voz
+  const recognition = new webkitSpeechRecognition();
+  
+  // Se configuran las opciones del reconocimiento
+  recognition.continuous = true; // El reconocimiento se detiene después de una sola frase
+  recognition.lang = 'es-ES'; // Se establece el idioma del reconocimiento
+  
+  // Se agrega un evento para detectar cuando el usuario comienza a hablar
+  recognition.onstart = function() {
+    console.log('¡Comenzó el reconocimiento de voz!');
+  }
+  
+  // Se agrega un evento para detectar cuando el usuario termina de hablar
+  recognition.onresult = function(event) {
+    // Se obtiene la última frase que el usuario pronunció
+    const lastResult = event.results[event.results.length - 1];
+    
+    // Se obtiene el texto de la frase
+    const text = lastResult[0].transcript.toLowerCase();
+    
+    // Se muestra el texto en la consola
+    console.log(`Usuario dijo: ${text}`);
+    
+    // Se ejecuta una función en base al comando de voz
+    if (text.includes('encender sótano')) {
+      luzSO();
+    } else if (text.includes('apagar sótano')) {
+      luzSO();
+    } 
+    else if (text.includes('encender lavado')) {
+      luzL();
+    }else if (text.includes('apagar lavado')) {
+      luzL();
+    } else if (text.includes('abrir puerta lavado')) {
+      puertaL();
+    }else if (text.includes('cerrar puerta lavado')) {
+      puertaL();
+    }else {
+      console.log('No se reconoció el comando de voz');
+    }
+  }
+  
+  // Se agrega un evento para detectar errores
+  recognition.onerror = function(event) {
+    console.log(`Error de reconocimiento: ${event.error}`);
+  }
+  
+  // Se inicia el reconocimiento de voz cuando se hace clic en un botón
+  document.getElementById('btn-reconocimiento').addEventListener('click', function() {
+    recognition.start();
+  });
+}
+
+
 function aplSO() {
   var btnluzso = document.getElementById("btnluzso");
   var puertac = document.getElementById("puertacerrada");
