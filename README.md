@@ -12,7 +12,6 @@ Los cambios en el plano son hechos mediante animaciones y superposiciones de im√
 
 - Control de luces
 - Control de puertas, ventanas y closets
-- Reconocimiento facial para entrada principal y garaje
 - Control por botones
 - Control por voz
 - Alertas visuales y auditivas al realizar una acci√≥n
