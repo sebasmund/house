@@ -2,7 +2,7 @@
 
 Este es un prototipo-simulador de software que permite a los usuarios interactuar con una interfaz para facilitar el control de sus viviendas a personas con movilidad reducida.
 
-La vivienda se controla mediante un plano y contiene animaciones para encender y apagar luces, abrir y cerrar puertas, ventanas y closets. Además, cuenta con reconocimiento facial para la entrada principal y el garaje.
+La vivienda se controla mediante un plano y contiene animaciones para encender y apagar luces, abrir y cerrar puertas, ventanas y closets.
 
 La interfaz puede ser controlada por botones y por voz, y al realizar una acción se despliega una alerta visual y auditiva.
 
