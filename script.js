@@ -29,15 +29,139 @@ if ('webkitSpeechRecognition' in window) {
     } else if (text.includes('apagar sótano')) {
       luzSO();
     } 
-    else if (text.includes('encender lavado')) {
+    else if (text.includes('encender luz lavado')) {
       luzL();
-    }else if (text.includes('apagar lavado')) {
+    }else if (text.includes('apagar luz lavado')) {
       luzL();
     } else if (text.includes('abrir puerta lavado')) {
       puertaL();
     }else if (text.includes('cerrar puerta lavado')) {
       puertaL();
-    }else {
+    }else if (text.includes('encender luz bebé')) {
+      luzHB();
+    }else if (text.includes('apagar luz bebé')) {
+      luzHB();
+    }else if (text.includes('abrir puerta bebé')) {
+      puertaHB();
+    }else if (text.includes('cerrar puerta bebé')) {
+      puertaHB();
+    }else if (text.includes('abrir ventana bebé')) {
+      ventanaHB();
+    }else if (text.includes('cerrar ventana bebé')) {
+      ventanaHB();
+    }else if (text.includes('encender luz comedor')) {
+      luzCOM();
+    }else if (text.includes('apagar luz comedor')) {
+      luzCOM();
+    }else if (text.includes('abrir ventana comedor')) {
+      ventanaCOM();
+    }else if (text.includes('cerrar ventana comedor')) {
+      ventanaCOM();
+    }else if (text.includes('encender luz uno')) {
+      luzHP();
+    }else if (text.includes('apagar luz uno')) {
+      luzHP();
+    }else if (text.includes('abrir puerta uno')) {
+      puertaHP();
+    }else if (text.includes('cerrar puerta uno')) {
+      puertaHP();
+    }else if (text.includes('abrir ventana uno')) {
+      ventanaHP();
+    }else if (text.includes('cerrar ventana uno')) {
+      ventanaHP();
+    }else if (text.includes('encender luz dos')) {
+      luzHS();
+    }else if (text.includes('apagar luz dos')) {
+      luzHS();
+    }else if (text.includes('abrir puerta dos')) {
+      puertaHS();
+    }else if (text.includes('cerrar puerta dos')) {
+      puertaHS();
+    }else if (text.includes('abrir ventana dos')) {
+      ventanaHS();
+    }else if (text.includes('cerrar ventana dos')) {
+      ventanaHS();
+    }else if (text.includes('encender luz baño uno')) {
+      luzBP();
+    }else if (text.includes('apagar luz baño uno')) {
+      luzBP();
+    }else if (text.includes('abrir puerta baño uno')) {
+      puertaBP();
+    }else if (text.includes('cerrar puerta baño uno')) {
+      puertaBP();
+    }else if (text.includes('abrir ventana baño uno')) {
+      ventanaBP();
+    }else if (text.includes('cerrar ventana baño uno')) {
+      ventanaBP();
+    }else if (text.includes('encender luz baño dos')) {
+      luzBH();
+    }else if (text.includes('apagar luz baño dos')) {
+      luzBH();
+    }else if (text.includes('abrir puerta baño dos')) {
+      puertaBH();
+    }else if (text.includes('cerrar puerta baño dos')) {
+      puertaBH();
+    }else if (text.includes('abrir ventana baño dos')) {
+      ventanaBH();
+    }else if (text.includes('cerrar ventana baño dos')) {
+      ventanaBH();
+    }else if (text.includes('encender luz pasillo uno')) {
+      luzPH();
+    }else if (text.includes('apagar luz pasillo uno')) {
+      luzPH();
+    }else if (text.includes('encender luz pasillo dos')) {
+      luzPP();
+    }else if (text.includes('apagar luz pasillo dos')) {
+      luzPP();
+    }else if (text.includes('encender luz pasillo tres')) {
+      luzPC();
+    }else if (text.includes('apagar luz pasillo tres')) {
+      luzPC();
+    }else if (text.includes('encender luz sala')) {
+      luzSA();
+    }else if (text.includes('apagar luz sala')) {
+      luzSA();
+    }else if (text.includes('abrir ventana sala')) {
+      ventanaSA();
+    }else if (text.includes('cerrar ventana sala')) {
+      ventanaSA();
+    }else if (text.includes('encender luz cocina')) {
+      luzCOC();
+    }else if (text.includes('apagar luz cocina')) {
+      luzCOC();
+    }else if (text.includes('abrir ventana cocina')) {
+      ventanaCOC();
+    }else if (text.includes('cerrar ventana cocina')) {
+      ventanaCOC();
+    }else if (text.includes('abrir closet pasillo uno')) {
+      closetPP();
+    }else if (text.includes('cerrar closet pasillo uno')) {
+      closetPP();
+    }else if (text.includes('abrir closet pasillo dos')) {
+    closetPH();
+    }else if (text.includes('cerrar closet pasillo dos')) {
+      closetPH();
+    }else if (text.includes('abrir closet habitación dos')) {
+      closetHS();
+      }else if (text.includes('cerrar closet habitación dos')) {
+        closetHS();
+      }else if (text.includes('abrir closet habitación uno')) {
+        closetHP();
+        }else if (text.includes('cerrar closet habitación uno')) {
+          closetHP();
+        }else if (text.includes('encender luz garaje')) {
+          luzG();
+        }else if (text.includes('apagar luz garaje')) {
+          luzG();
+        }else if (text.includes('abrir puerta garaje')) {
+          puertaGA();
+        }else if (text.includes('cerrar puerta garaje')) {
+          puertaGA();
+        }else if (text.includes('abrir puerta persona')) {
+          puertaG();
+        }else if (text.includes('cerrar puerta persona')) {
+          puertaG();
+        }else {
       console.log('No se reconoció el comando de voz');
     }
   }
