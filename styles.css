@@ -102,6 +102,42 @@
   border-radius: 5px;
 }
 
+.ccocina{
+  position: absolute;
+  z-index: 2;
+  margin-left: 620px;
+  margin-top: 950px;
+  width: 500px;
+  height: 300px;
+}
+
+.cfd{
+  position: absolute;
+  z-index: 2;
+  margin-left: 620px;
+  margin-top: 1300px;
+  width: 500px;
+  height: 300px;
+}
+
+.cgarage{
+  position: absolute;
+  z-index: 2;
+  margin-left: 83px;
+  margin-top: 950px;
+  width: 500px;
+  height: 300px;
+}
+
+.chb{
+  position: absolute;
+  z-index: 2;
+  margin-left: 83px;
+  margin-top: 1300px;
+  width: 500px;
+  height: 300px;
+}
+
 .botones {
   text-align: right;
   width: 20%;

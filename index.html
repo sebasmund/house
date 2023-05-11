@@ -23,6 +23,12 @@
     <div id="closetabierto"></div>
     <div id="ventanacerrada"></div>
     <div id="ventanaabierta"></div>
+
+    <!-- camaras de seguridad -->
+    <img src="assets/cocina.jpg" alt="ccocina" class="ccocina oculto">
+    <img src="assets/frontdoor.jpg" alt="cfd" class="cfd oculto">
+    <img src="assets/garage.jpg" alt="cgarage" class="cgarage oculto">
+    <img src="assets/hb.jpg" alt="chb" class="chb oculto">
   
   <div class="contenedor">
     <!-- plano -->
@@ -182,14 +188,7 @@
         <button id ="btnpuertag" class="btn btn-primary" onclick="puertaG()">Abrir puerta</button>
       </div>
     </div>
-    <div class="dropdown">
-      <button onclick="showDropdown('dropdown-menu-10')">Cámaras de seguridad</button>
-      <div id="dropdown-menu-10" class="dropdown-menu">
-        <button id ="btnluzg" class="btn btn-primary" onclick="luzG()">Encender luces</button>
-        <button id ="btnpuertaga" class="btn btn-primary" onclick="puertaGA()">Abrir garage</button>
-        <button id ="btnpuertag" class="btn btn-primary" onclick="puertaG()">Abrir puerta</button>
-      </div>
-    </div>
+    <button id ="btnluzg" class="btn btn-primary" onclick="camarasSeguridad()">Cámaras de seguridad</button>
   </div>
 </body>
 </html>

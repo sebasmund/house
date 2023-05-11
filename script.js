@@ -2,181 +2,180 @@
 if ('webkitSpeechRecognition' in window) {
   // Se crea una instancia de la API de reconocimiento de voz
   const recognition = new webkitSpeechRecognition();
-  
+
   // Se configuran las opciones del reconocimiento
   recognition.continuous = true; // El reconocimiento se detiene después de una sola frase
   recognition.lang = 'es-ES'; // Se establece el idioma del reconocimiento
-  
+
   // Se agrega un evento para detectar cuando el usuario comienza a hablar
-  recognition.onstart = function() {
+  recognition.onstart = function () {
     console.log('¡Comenzó el reconocimiento de voz!');
   }
-  
+
   // Se agrega un evento para detectar cuando el usuario termina de hablar
-  recognition.onresult = function(event) {
+  recognition.onresult = function (event) {
     // Se obtiene la última frase que el usuario pronunció
     const lastResult = event.results[event.results.length - 1];
-    
+
     // Se obtiene el texto de la frase
     const text = lastResult[0].transcript.toLowerCase();
-    
+
     // Se muestra el texto en la consola
     console.log(`Usuario dijo: ${text}`);
-    
+
     // Se ejecuta una función en base al comando de voz
     if (text.includes('encender sótano')) {
       luzSO();
     } else if (text.includes('apagar sótano')) {
       luzSO();
-    } 
+    }
     else if (text.includes('encender luz lavado')) {
       luzL();
-    }else if (text.includes('apagar luz lavado')) {
+    } else if (text.includes('apagar luz lavado')) {
       luzL();
     } else if (text.includes('abrir puerta lavado')) {
       puertaL();
-    }else if (text.includes('cerrar puerta lavado')) {
+    } else if (text.includes('cerrar puerta lavado')) {
       puertaL();
-    }else if (text.includes('encender luz bebé')) {
+    } else if (text.includes('encender luz bebé')) {
       luzHB();
-    }else if (text.includes('apagar luz bebé')) {
+    } else if (text.includes('apagar luz bebé')) {
       luzHB();
-    }else if (text.includes('abrir puerta bebé')) {
+    } else if (text.includes('abrir puerta bebé')) {
       puertaHB();
-    }else if (text.includes('cerrar puerta bebé')) {
+    } else if (text.includes('cerrar puerta bebé')) {
       puertaHB();
-    }else if (text.includes('abrir ventana bebé')) {
+    } else if (text.includes('abrir ventana bebé')) {
       ventanaHB();
-    }else if (text.includes('cerrar ventana bebé')) {
+    } else if (text.includes('cerrar ventana bebé')) {
       ventanaHB();
-    }else if (text.includes('encender luz comedor')) {
+    } else if (text.includes('encender luz comedor')) {
       luzCOM();
-    }else if (text.includes('apagar luz comedor')) {
+    } else if (text.includes('apagar luz comedor')) {
       luzCOM();
-    }else if (text.includes('abrir ventana comedor')) {
+    } else if (text.includes('abrir ventana comedor')) {
       ventanaCOM();
-    }else if (text.includes('cerrar ventana comedor')) {
+    } else if (text.includes('cerrar ventana comedor')) {
       ventanaCOM();
-    }else if (text.includes('encender luz uno')) {
+    } else if (text.includes('encender luz uno')) {
       luzHP();
-    }else if (text.includes('apagar luz uno')) {
+    } else if (text.includes('apagar luz uno')) {
       luzHP();
-    }else if (text.includes('abrir puerta uno')) {
+    } else if (text.includes('abrir puerta uno')) {
       puertaHP();
-    }else if (text.includes('cerrar puerta uno')) {
+    } else if (text.includes('cerrar puerta uno')) {
       puertaHP();
-    }else if (text.includes('abrir ventana uno')) {
+    } else if (text.includes('abrir ventana uno')) {
       ventanaHP();
-    }else if (text.includes('cerrar ventana uno')) {
+    } else if (text.includes('cerrar ventana uno')) {
       ventanaHP();
-    }else if (text.includes('encender luz dos')) {
+    } else if (text.includes('encender luz dos')) {
       luzHS();
-    }else if (text.includes('apagar luz dos')) {
+    } else if (text.includes('apagar luz dos')) {
       luzHS();
-    }else if (text.includes('abrir puerta dos')) {
+    } else if (text.includes('abrir puerta dos')) {
       puertaHS();
-    }else if (text.includes('cerrar puerta dos')) {
+    } else if (text.includes('cerrar puerta dos')) {
       puertaHS();
-    }else if (text.includes('abrir ventana dos')) {
+    } else if (text.includes('abrir ventana dos')) {
       ventanaHS();
-    }else if (text.includes('cerrar ventana dos')) {
+    } else if (text.includes('cerrar ventana dos')) {
       ventanaHS();
-    }else if (text.includes('encender luz baño uno')) {
+    } else if (text.includes('encender luz baño uno')) {
       luzBP();
-    }else if (text.includes('apagar luz baño uno')) {
+    } else if (text.includes('apagar luz baño uno')) {
       luzBP();
-    }else if (text.includes('abrir puerta baño uno')) {
+    } else if (text.includes('abrir puerta baño uno')) {
       puertaBP();
-    }else if (text.includes('cerrar puerta baño uno')) {
+    } else if (text.includes('cerrar puerta baño uno')) {
       puertaBP();
-    }else if (text.includes('abrir ventana baño uno')) {
+    } else if (text.includes('abrir ventana baño uno')) {
       ventanaBP();
-    }else if (text.includes('cerrar ventana baño uno')) {
+    } else if (text.includes('cerrar ventana baño uno')) {
       ventanaBP();
-    }else if (text.includes('encender luz baño dos')) {
+    } else if (text.includes('encender luz baño dos')) {
       luzBH();
-    }else if (text.includes('apagar luz baño dos')) {
+    } else if (text.includes('apagar luz baño dos')) {
       luzBH();
-    }else if (text.includes('abrir puerta baño dos')) {
+    } else if (text.includes('abrir puerta baño dos')) {
       puertaBH();
-    }else if (text.includes('cerrar puerta baño dos')) {
+    } else if (text.includes('cerrar puerta baño dos')) {
       puertaBH();
-    }else if (text.includes('abrir ventana baño dos')) {
+    } else if (text.includes('abrir ventana baño dos')) {
       ventanaBH();
-    }else if (text.includes('cerrar ventana baño dos')) {
+    } else if (text.includes('cerrar ventana baño dos')) {
       ventanaBH();
-    }else if (text.includes('encender luz pasillo uno')) {
+    } else if (text.includes('encender luz pasillo uno')) {
       luzPH();
-    }else if (text.includes('apagar luz pasillo uno')) {
+    } else if (text.includes('apagar luz pasillo uno')) {
       luzPH();
-    }else if (text.includes('encender luz pasillo dos')) {
+    } else if (text.includes('encender luz pasillo dos')) {
       luzPP();
-    }else if (text.includes('apagar luz pasillo dos')) {
+    } else if (text.includes('apagar luz pasillo dos')) {
       luzPP();
-    }else if (text.includes('encender luz pasillo tres')) {
+    } else if (text.includes('encender luz pasillo tres')) {
       luzPC();
-    }else if (text.includes('apagar luz pasillo tres')) {
+    } else if (text.includes('apagar luz pasillo tres')) {
       luzPC();
-    }else if (text.includes('encender luz sala')) {
+    } else if (text.includes('encender luz sala')) {
       luzSA();
-    }else if (text.includes('apagar luz sala')) {
+    } else if (text.includes('apagar luz sala')) {
       luzSA();
-    }else if (text.includes('abrir ventana sala')) {
+    } else if (text.includes('abrir ventana sala')) {
       ventanaSA();
-    }else if (text.includes('cerrar ventana sala')) {
+    } else if (text.includes('cerrar ventana sala')) {
       ventanaSA();
-    }else if (text.includes('encender luz cocina')) {
+    } else if (text.includes('encender luz cocina')) {
       luzCOC();
-    }else if (text.includes('apagar luz cocina')) {
+    } else if (text.includes('apagar luz cocina')) {
       luzCOC();
-    }else if (text.includes('abrir ventana cocina')) {
+    } else if (text.includes('abrir ventana cocina')) {
       ventanaCOC();
-    }else if (text.includes('cerrar ventana cocina')) {
+    } else if (text.includes('cerrar ventana cocina')) {
       ventanaCOC();
-    }else if (text.includes('abrir closet pasillo uno')) {
+    } else if (text.includes('abrir closet pasillo uno')) {
       closetPP();
-    }else if (text.includes('cerrar closet pasillo uno')) {
+    } else if (text.includes('cerrar closet pasillo uno')) {
       closetPP();
-    }else if (text.includes('abrir closet pasillo dos')) {
-    closetPH();
-    }else if (text.includes('cerrar closet pasillo dos')) {
+    } else if (text.includes('abrir closet pasillo dos')) {
       closetPH();
-    }else if (text.includes('abrir closet habitación dos')) {
+    } else if (text.includes('cerrar closet pasillo dos')) {
+      closetPH();
+    } else if (text.includes('abrir closet habitación dos')) {
       closetHS();
-      }else if (text.includes('cerrar closet habitación dos')) {
-        closetHS();
-      }else if (text.includes('abrir closet habitación uno')) {
-        closetHP();
-        }else if (text.includes('cerrar closet habitación uno')) {
-          closetHP();
-        }else if (text.includes('encender luz garaje')) {
-          luzG();
-        }else if (text.includes('apagar luz garaje')) {
-          luzG();
-        }else if (text.includes('abrir puerta garaje')) {
-          puertaGA();
-        }else if (text.includes('cerrar puerta garaje')) {
-          puertaGA();
-        }else if (text.includes('abrir puerta persona')) {
-          puertaG();
-        }else if (text.includes('cerrar puerta persona')) {
-          puertaG();
-        }else {
+    } else if (text.includes('cerrar closet habitación dos')) {
+      closetHS();
+    } else if (text.includes('abrir closet habitación uno')) {
+      closetHP();
+    } else if (text.includes('cerrar closet habitación uno')) {
+      closetHP();
+    } else if (text.includes('encender luz garaje')) {
+      luzG();
+    } else if (text.includes('apagar luz garaje')) {
+      luzG();
+    } else if (text.includes('abrir puerta garaje')) {
+      puertaGA();
+    } else if (text.includes('cerrar puerta garaje')) {
+      puertaGA();
+    } else if (text.includes('abrir puerta persona')) {
+      puertaG();
+    } else if (text.includes('cerrar puerta persona')) {
+      puertaG();
+    } else {
       console.log('No se reconoció el comando de voz');
     }
   }
-  
+
   // Se agrega un evento para detectar errores
-  recognition.onerror = function(event) {
+  recognition.onerror = function (event) {
     console.log(`Error de reconocimiento: ${event.error}`);
   }
-  
+
   // Se inicia el reconocimiento de voz cuando se hace clic en un botón
-  document.getElementById('btn-reconocimiento').addEventListener('click', function() {
+  document.getElementById('btn-reconocimiento').addEventListener('click', function () {
     recognition.start();
   });
 }
-
 
 function aplSO() {
   var btnluzso = document.getElementById("btnluzso");
@@ -202,7 +201,7 @@ function aplSO() {
 }
 
 function luzSO() {
-  luzSotano(); 
+  luzSotano();
   luzEscaleras();
   aplSO();
 }
@@ -226,7 +225,7 @@ function acpSO() {
     setTimeout(() => {
       puertaa.style.display = 'none';
     }, 4500);
-    speakMessage("Puerta abierta")   
+    speakMessage("Puerta abierta")
   }
 }
 
@@ -254,7 +253,7 @@ function acpL() {
     setTimeout(() => {
       puertaa.style.display = 'none';
     }, 4500);
-    speakMessage("Puerta abierta")   
+    speakMessage("Puerta abierta")
   }
 }
 
@@ -338,7 +337,7 @@ function acpHB() {
     setTimeout(() => {
       puertaa.style.display = 'none';
     }, 4500);
-    speakMessage("Puerta abierta")   
+    speakMessage("Puerta abierta")
   }
 }
 
@@ -479,7 +478,7 @@ function acpHP() {
     setTimeout(() => {
       puertaa.style.display = 'none';
     }, 4500);
-    speakMessage("Puerta abierta")   
+    speakMessage("Puerta abierta")
   }
 }
 
@@ -563,7 +562,7 @@ function acpHS() {
     setTimeout(() => {
       puertaa.style.display = 'none';
     }, 4500);
-    speakMessage("Puerta abierta")   
+    speakMessage("Puerta abierta")
   }
 }
 
@@ -647,7 +646,7 @@ function acpBP() {
     setTimeout(() => {
       puertaa.style.display = 'none';
     }, 4500);
-    speakMessage("Puerta abierta")   
+    speakMessage("Puerta abierta")
   }
 }
 
@@ -731,7 +730,7 @@ function acpBH() {
     setTimeout(() => {
       puertaa.style.display = 'none';
     }, 4500);
-    speakMessage("Puerta abierta")   
+    speakMessage("Puerta abierta")
   }
 }
 
@@ -1151,7 +1150,7 @@ function acpG() {
     setTimeout(() => {
       puertaa.style.display = 'none';
     }, 4500);
-    speakMessage("Puerta abierta")   
+    speakMessage("Puerta abierta")
   }
 }
 
@@ -1191,192 +1190,161 @@ function luzHp() {
 }
 
 function luzHnl() {
-  var hnl= document.querySelector('.hnl');
+  var hnl = document.querySelector('.hnl');
   hnl.classList.toggle('oculto');
 }
 
 function luzComedor() {
-  var comedorl= document.querySelector('.comedorl');
+  var comedorl = document.querySelector('.comedorl');
   comedorl.classList.toggle('oculto');
-
 }
 
 function luzBano1() {
-  var bano1l= document.querySelector('.baño1l');
+  var bano1l = document.querySelector('.baño1l');
   bano1l.classList.toggle('oculto');
-  
 }
 
 function luzBano2() {
-  var bano2l= document.querySelector('.b2l');
+  var bano2l = document.querySelector('.b2l');
   bano2l.classList.toggle('oculto');
-  
 }
 
 function luzCocina() {
-  var cocinal= document.querySelector('.cocinal');
+  var cocinal = document.querySelector('.cocinal');
   cocinal.classList.toggle('oculto');
-  
 }
 
 function luzGarage() {
-  var garagel= document.querySelector('.garagel');
+  var garagel = document.querySelector('.garagel');
   garagel.classList.toggle('oculto');
-  
 }
 
 function luzPasillo1() {
-  var pasillocl= document.querySelector('.pasillocl');
+  var pasillocl = document.querySelector('.pasillocl');
   pasillocl.classList.toggle('oculto');
-  
 }
 
 function luzPasillo2() {
-  var pasillopl= document.querySelector('.pasillopl');
+  var pasillopl = document.querySelector('.pasillopl');
   pasillopl.classList.toggle('oculto');
-  
 }
 
-function luzPasillo3(){
- var onl= document.querySelector('.onl');
- onl.classList.toggle('oculto');
- 
+function luzPasillo3() {
+  var onl = document.querySelector('.onl');
+  onl.classList.toggle('oculto');
 }
 
 function luzSala() {
-  var salal= document.querySelector('.salal');
+  var salal = document.querySelector('.salal');
   salal.classList.toggle('oculto');
-  
 }
 
-function puertaSotano(){
-  var psa= document.querySelector('.psa');
+function puertaSotano() {
+  var psa = document.querySelector('.psa');
   psa.classList.toggle('oculto');
-  
 }
 
-function puertaLavado(){
-  var pcla= document.querySelector('.pcla');
+function puertaLavado() {
+  var pcla = document.querySelector('.pcla');
   pcla.classList.toggle('oculto');
-  
 }
 
-function VentanaBa(){
-  var vb1a= document.querySelector('.vb1a');
+function VentanaBa() {
+  var vb1a = document.querySelector('.vb1a');
   vb1a.classList.toggle('oculto');
-  
 }
 
-function AbrirCloH1(){
-  var cp1l= document.querySelector('.cp1l');
+function AbrirCloH1() {
+  var cp1l = document.querySelector('.cp1l');
   cp1l.classList.toggle('oculto');
-  
 }
-function AbrirCloH2(){
-  var c2a= document.querySelector('.c2a');
+function AbrirCloH2() {
+  var c2a = document.querySelector('.c2a');
   c2a.classList.toggle('oculto');
-  
 }
-function AbrirClo1(){
-  var cp2l= document.querySelector('.cp2l');
+function AbrirClo1() {
+  var cp2l = document.querySelector('.cp2l');
   cp2l.classList.toggle('oculto');
-  
 }
 
-function AbrirClo2(){
-  var c1a= document.querySelector('.c1a');
+function AbrirClo2() {
+  var c1a = document.querySelector('.c1a');
   c1a.classList.toggle('oculto');
-  
 }
 
-function VentanaBa2(){
-  var vb2a= document.querySelector('.vb2a');
+function VentanaBa2() {
+  var vb2a = document.querySelector('.vb2a');
   vb2a.classList.toggle('oculto');
-  
 }
 
-function puertaH1(){
-  var h1pa= document.querySelector('.h1pa');
+function puertaH1() {
+  var h1pa = document.querySelector('.h1pa');
   h1pa.classList.toggle('oculto');
-  
 }
 
-function puertaHp(){
-  var phpa= document.querySelector('.phpa');
+function puertaHp() {
+  var phpa = document.querySelector('.phpa');
   phpa.classList.toggle('oculto');
-  
 }
 
-function VentanaNpa(){
-  var npa= document.querySelector('.nva');
+function VentanaNpa() {
+  var npa = document.querySelector('.nva');
   npa.classList.toggle('oculto');
-  
 }
 
-function AbrirVentanaHp(){
-  var vhpa= document.querySelector('.vhpa');
+function AbrirVentanaHp() {
+  var vhpa = document.querySelector('.vhpa');
   vhpa.classList.toggle('oculto');
-  
 }
 
-function AbrirVentanaH1(){
-  var h1va= document.querySelector('.h1va');
-h1va.classList.toggle('oculto');
-  
+function AbrirVentanaH1() {
+  var h1va = document.querySelector('.h1va');
+  h1va.classList.toggle('oculto');
 }
 
-function puertaNpa(){
-  var npa= document.querySelector('.npa');
+function puertaNpa() {
+  var npa = document.querySelector('.npa');
   npa.classList.toggle('oculto');
-  
 }
 
-function VentanaVa(){
-  var va= document.querySelector('.va');
+function VentanaVa() {
+  var va = document.querySelector('.va');
   va.classList.toggle('oculto');
-  
 }
 
-function PuertaBa(){
-  var pb1a= document.querySelector('.pb1a');
+function PuertaBa() {
+  var pb1a = document.querySelector('.pb1a');
   pb1a.classList.toggle('oculto');
-  
 }
 
-function VentanaVca(){
-  var vca= document.querySelector('.vca');
+function VentanaVca() {
+  var vca = document.querySelector('.vca');
   vca.classList.toggle('oculto');
-  
 }
 
-function PuertaPga(){
-  var pga= document.querySelector('.pga');
+function PuertaPga() {
+  var pga = document.querySelector('.pga');
   pga.classList.toggle('oculto');
-  
 }
 
-function PuertaPcga(){
-  var pcga= document.querySelector('.pcga');
+function PuertaPcga() {
+  var pcga = document.querySelector('.pcga');
   pcga.classList.toggle('oculto');
-  
 }
 
-function PuertaBa2(){
-  var pb2a= document.querySelector('.pb2a');
+function PuertaBa2() {
+  var pb2a = document.querySelector('.pb2a');
   pb2a.classList.toggle('oculto');
-  
 }
 
-function VentanaSala(){
-  var vsa= document.querySelector('.vsa');
+function VentanaSala() {
+  var vsa = document.querySelector('.vsa');
   vsa.classList.toggle('oculto');
-  
 }
 
-function PuertaPasillo2(){
-  var ppa= document.querySelector('.ppa');
+function PuertaPasillo2() {
+  var ppa = document.querySelector('.ppa');
   ppa.classList.toggle('oculto');
-  
 }
 
 function showDropdown(id) {
@@ -1386,4 +1354,15 @@ function showDropdown(id) {
   } else {
     dropdownMenu.style.display = "none";
   }
+}
+
+function camarasSeguridad() {
+  var ccocina = document.querySelector('.ccocina');
+  ccocina.classList.toggle('oculto');
+  var cfd = document.querySelector('.cfd');
+  cfd.classList.toggle('oculto');
+  var cgarage = document.querySelector('.cgarage');
+  cgarage.classList.toggle('oculto');
+  var chb = document.querySelector('.chb');
+  chb.classList.toggle('oculto');
 }
