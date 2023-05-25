@@ -19,6 +19,7 @@ function setup() {
     createCanvas(225, 360);
     video = createCapture(VIDEO);
     video.size(225, 360);
+    video.parent('videoContainer');
   }
    
 
