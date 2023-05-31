@@ -101,7 +101,7 @@ function onDetected(error, results) {
         if (detections[i].label === 'person') {
           personaDetectada = true;
           deteccionActiva = false;
-          puertaGA()
+         puertaPR();
 
           break;
         }
@@ -138,6 +138,32 @@ function toggleDetecting() {
 function PuertaPcga() {
   var pcga = document.querySelector('.pcga');
   pcga.classList.toggle('oculto');
+  function PuertaPrin(){
+    var pcga = document.querySelector('.pcla2');
+    pcga.classList.toggle('oculto');
+  }
+}
+function acpPa() {
+  var btnppa = document.getElementById("btnpuerP");
+  var puertap = document.getElementById("puertacerrada");
+  var puertapc = document.getElementById("puertaabierta");
+  if (btnppa.innerHTML === "Cerrar Puerta") {
+    btnppa.innerHTML = "Abrir Puerta";
+    puertap.innerHTML = "Cerrar Puerta";
+    puertapc.style.display = "block";
+    setTimeout(() => {
+      puertap.style.display = 'none';
+    }, 2500);
+    speakMessage("Puerta Principal Cerrada")
+  } else {
+    btnppa.innerHTML = "Cerrar Puerta";
+    puertapc.innerHTML = "Abirir Puerta";
+    puertapc.style.display = "block";
+    setTimeout(() => {
+      puertapc.style.display = 'none';
+    }, 2500);
+    speakMessage("Puerta Principal Abierta, Bienvenido")
+  }
 }
 function acpGA() {
     var btnpga = document.getElementById("btnpuertaga");
@@ -164,4 +190,8 @@ function acpGA() {
   function puertaGA() {
     PuertaPcga();
     acpGA();
+  }
+  function puertaPR() {
+    PuertaPrin();
+    acpPa();
   }

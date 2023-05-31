@@ -161,7 +161,11 @@ if ('webkitSpeechRecognition' in window) {
       puertaG();
     } else if (text.includes('cerrar puerta persona')) {
       puertaG();
-    } else {
+    } else if (text.includes('abrir puerta principal')) {
+      puertaPR();
+    } else if (text.includes('cerrar puerta principal')) {
+      puertaPR();
+    }else {
       console.log('No se reconoció el comando de voz');
     }
   }
@@ -1125,10 +1129,36 @@ function acpGA() {
     speakMessage("Garage abierto")
   }
 }
+function acpPa() {
+  var btnppa = document.getElementById("btnpuerP");
+  var puertap = document.getElementById("puertacerrada");
+  var puertapc = document.getElementById("puertaabierta");
+  if (btnppa.innerHTML === "Cerrar Puerta") {
+    btnppa.innerHTML = "Abrir Puerta";
+    puertap.innerHTML = "Cerrar Puerta";
+    puertapc.style.display = "block";
+    setTimeout(() => {
+      puertap.style.display = 'none';
+    }, 2500);
+    speakMessage("Puerta Principal Cerrada")
+  } else {
+    btnppa.innerHTML = "Cerrar Puerta";
+    puertapc.innerHTML = "Abirir Puerta";
+    puertapc.style.display = "block";
+    setTimeout(() => {
+      puertapc.style.display = 'none';
+    }, 2500);
+    speakMessage("Puerta Principal Abierta, Bienvenido")
+  }
+}
 
 function puertaGA() {
   PuertaPcga();
   acpGA();
+}
+function puertaPR() {
+  PuertaPrin();
+  acpPa();
 }
 
 function acpG() {
@@ -1329,6 +1359,10 @@ function PuertaPga() {
 
 function PuertaPcga() {
   var pcga = document.querySelector('.pcga');
+  pcga.classList.toggle('oculto');
+}
+function PuertaPrin(){
+  var pcga = document.querySelector('.pcla2');
   pcga.classList.toggle('oculto');
 }
 

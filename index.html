@@ -20,7 +20,7 @@
 <body>
   <div>
     <button id="videoAction" onclick="toggleVideo()">Desactivar Video</button>
-    <button id="detectionAction" onclick="toggleDetecting()">Camara Garage</button>
+    <button id="detectionAction" onclick="toggleDetecting()">Camara Principal</button>
 </div>
 <div id="videoContainer"></div>
 </div>
@@ -75,6 +75,9 @@
     <img src="assets/garage/pga.png" alt="pga" class="pga oculto">
     <img src="assets/garage/pcga.png" alt="pcga" class="pcga oculto">
     <img src="assets/pasillos/ppa.png" alt="ppa" class="ppa oculto">
+    <img src="assets/lavado/pcla.png" alt="pcla2" class="pcla2 oculto">
+    
+    
 
     <!-- ventanas abiertas -->
     <img src="assets/comedor/va.png" alt="va" class="va oculto">
@@ -199,6 +202,11 @@
         <button id ="btnpuertaga" class="btn btn-primary" onclick="puertaGA()">Abrir garage</button>
         <button id ="btnpuertag" class="btn btn-primary" onclick="puertaG()">Abrir puerta</button>
       </div>
+      <button onclick="showDropdown('dropdown-menu-14')">Puerta principal</button>
+      <div id="dropdown-menu-14" class="dropdown-menu">
+        <button id ="btnpuerP" class="btn btn-primary" onclick="puertaPR() ">Abrir puerta</button>
+      </div>
+      
     </div>
     <button id ="btnluzg" class="btn btn-primary" onclick="camarasSeguridad()">Cámaras de seguridad</button>
   </div>
