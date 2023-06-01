@@ -156,8 +156,8 @@ function acpPa() {
     }, 2500);
     speakMessage("Puerta Principal Cerrada")
   } else {
-    btnppa.innerHTML = "Cerrar Puerta";
-    puertapc.innerHTML = "Abirir Puerta";
+    btnppa.innerHTML = "Puerta cerrada";
+    puertapc.innerHTML = "Puerta abierta";
     puertapc.style.display = "block";
     setTimeout(() => {
       puertapc.style.display = 'none';

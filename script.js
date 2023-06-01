@@ -1133,22 +1133,22 @@ function acpPa() {
   var btnppa = document.getElementById("btnpuerP");
   var puertap = document.getElementById("puertacerrada");
   var puertapc = document.getElementById("puertaabierta");
-  if (btnppa.innerHTML === "Cerrar Puerta") {
-    btnppa.innerHTML = "Abrir Puerta";
-    puertap.innerHTML = "Cerrar Puerta";
-    puertapc.style.display = "block";
+  if (btnppa.innerHTML === "Cerrar puerta") {
+    btnppa.innerHTML = "Abrir puerta";
+    puertap.innerHTML = "Puerta cerrada";
+    puertap.style.display = "block";
     setTimeout(() => {
       puertap.style.display = 'none';
-    }, 2500);
-    speakMessage("Puerta Principal Cerrada")
+    }, 4500);
+    speakMessage("Puerta cerrada")
   } else {
-    btnppa.innerHTML = "Cerrar Puerta";
-    puertapc.innerHTML = "Abirir Puerta";
+    btnppa.innerHTML = "Cerrar puerta";
+    puertapc.innerHTML = "Puerta abierta";
     puertapc.style.display = "block";
     setTimeout(() => {
       puertapc.style.display = 'none';
-    }, 2500);
-    speakMessage("Puerta Principal Abierta, Bienvenido")
+    }, 4500);
+    speakMessage("Puerta abierta")
   }
 }
 
